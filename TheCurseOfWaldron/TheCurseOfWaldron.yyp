@@ -8,6 +8,7 @@
     {"id":{"name":"enemySpawner","path":"objects/enemySpawner/enemySpawner.yy",},"order":6,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
     {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"order":3,},
+    {"id":{"name":"spr_water","path":"sprites/spr_water/spr_water.yy",},"order":6,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
     {"id":{"name":"scr_damage","path":"scripts/scr_damage/scr_damage.yy",},"order":0,},
     {"id":{"name":"obj_magicBall","path":"objects/obj_magicBall/obj_magicBall.yy",},"order":2,},

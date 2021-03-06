@@ -5,4 +5,4 @@ globalvar xp;
 xp = 0;
 
 globalvar maxXP;
-maxXP = 10 + (lvl * 100);
+maxXP = lvl * 100;
