@@ -38,13 +38,14 @@ y = y + vspeed;
 
 //invert sprite for moving left and right
 if(hspeed != 0){
-image_xscale = sign(hspeed);
+	image_xscale = sign(hspeed);
 }
 
 //shoot magic
 if (canShoot && mouse_check_button(mb_left)){
-instance_create_layer(x, y, 0, obj_magicBall);	
-alarm[0] = shotCooldown;
-canShoot = false;
-
+	instance_create_layer(x, y, 0, obj_magicBall);	
+	alarm[0] = shotCooldown;
+	canShoot = false;
+	// making sprite face the direction of magic projectile
+	image_xscale = sign(mouse_x - x);
 }
