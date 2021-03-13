@@ -21,6 +21,7 @@
     {"id":{"name":"obj_magicBall","path":"objects/obj_magicBall/obj_magicBall.yy",},"order":2,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},"order":3,},
+    {"id":{"name":"scr_changeLabel","path":"scripts/scr_changeLabel/scr_changeLabel.yy",},"order":1,},
     {"id":{"name":"obj_ruby","path":"objects/obj_ruby/obj_ruby.yy",},"order":17,},
     {"id":{"name":"obj_uncle","path":"objects/obj_uncle/obj_uncle.yy",},"order":7,},
     {"id":{"name":"pathDefault","path":"paths/pathDefault/pathDefault.yy",},"order":0,},

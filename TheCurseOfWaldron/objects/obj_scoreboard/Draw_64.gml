@@ -15,11 +15,14 @@ if(instance_exists(obj_player))
 
 }
 
-	draw_healthbar(8, 100, 256, 124, xp, $FFFFFFFF & $FFFFFF, c_red,c_red, 0, (($FFFFFFFF>>24) != 0), (($FFFFFFFF>>24) != 0));
+	draw_healthbar(8, 100, 256, 124, xp, $FFFFFFFF & $FFFFFF, c_blue,c_blue, 0, (($FFFFFFFF>>24) != 0), (($FFFFFFFF>>24) != 0));
 	draw_text(8, 350, lvl);
 	draw_set_color(c_black)
 	draw_text(10, 200, xp);
-	draw_text(50, 200, overallXP); 
+	draw_text(5, 220, "XP");
+	draw_text(70, 200, overallXP);
+	draw_text(40, 220, "Overall");
+	draw_text(8, 130, obj_scoreboard.xpLabel);
 	
 if (global.game_over) {//display gameover message if player has died
 	draw_set_halign(fa_center)

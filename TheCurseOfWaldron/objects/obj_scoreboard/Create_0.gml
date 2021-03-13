@@ -1,5 +1,7 @@
 globalvar lvl;
-lvl = 1;
+lvl = 0;
+
+xpLabel = "Novice"
 
 globalvar xp;
 xp = 0;
