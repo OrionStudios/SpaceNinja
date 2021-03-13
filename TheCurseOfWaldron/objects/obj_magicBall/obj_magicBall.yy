@@ -23,8 +23,10 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_magicBall","path":"objects/obj_magicBall/obj_magicBall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"parent":{"name":"obj_magicBall","path":"objects/obj_magicBall/obj_magicBall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"parent":{"name":"obj_magicBall","path":"objects/obj_magicBall/obj_magicBall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_magicBall","path":"objects/obj_magicBall/obj_magicBall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_falkor","path":"objects/obj_falkor/obj_falkor.yy",},"parent":{"name":"obj_magicBall","path":"objects/obj_magicBall/obj_magicBall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_gregaloon","path":"objects/obj_gregaloon/obj_gregaloon.yy",},"parent":{"name":"obj_magicBall","path":"objects/obj_magicBall/obj_magicBall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_trainingDummy","path":"objects/obj_trainingDummy/obj_trainingDummy.yy",},"parent":{"name":"obj_magicBall","path":"objects/obj_magicBall/obj_magicBall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

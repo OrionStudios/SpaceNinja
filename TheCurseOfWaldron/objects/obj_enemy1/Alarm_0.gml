@@ -1,3 +1,0 @@
-
-canShoot = true;
-

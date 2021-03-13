@@ -8,5 +8,6 @@ shotCooldown = 30;
 
 canShoot = true;
 
+canShield = false;
 
-hp = 100;
+hp = 3;

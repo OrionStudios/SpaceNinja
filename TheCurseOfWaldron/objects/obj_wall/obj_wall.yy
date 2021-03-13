@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Barriers",
+    "path": "folders/Objects/Barriers.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_wall",
