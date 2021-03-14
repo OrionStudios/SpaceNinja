@@ -1,5 +1,5 @@
 {
-  "kind": 0,
+  "kind": 1,
   "closed": false,
   "precision": 4,
   "points": [

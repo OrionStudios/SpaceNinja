@@ -4,7 +4,7 @@ if(keyboard_check_pressed(ord("N"))){
 	lvl ++; //level up
 }else if(keyboard_check_pressed(ord("H"))){
 	obj_player.hp += 3;//health boost
-}else if(keyboard_check_pressed(ord("X"))){
+}else if(keyboard_check_pressed(ord("C"))){
 xp += 25;	
 overallXP += 25;
 }

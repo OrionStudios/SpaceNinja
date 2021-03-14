@@ -4,7 +4,7 @@
     "path": "sprites/Sprite8/Sprite8.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
