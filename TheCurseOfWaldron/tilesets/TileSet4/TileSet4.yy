@@ -1,4 +1,5 @@
 {
+  "name": "TileSet4",
   "spriteId": {
     "name": "Sprite18",
     "path": "sprites/Sprite18/Sprite18.yy",
@@ -9,7 +10,7 @@
   "tileyoff": 0,
   "tilehsep": 0,
   "tilevsep": 0,
-  "spriteNoExport": true,
+  "spriteNoExport": false,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -522,7 +523,6 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "TileSet4",
   "tags": [],
   "resourceType": "GMTileSet",
 }

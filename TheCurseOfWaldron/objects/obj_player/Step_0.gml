@@ -17,7 +17,7 @@ vspeed = vertMove * walksp;
 
 //Horizontal Collision
 if(place_meeting(x + hspeed, y, obj_wall) || place_meeting(x + hspeed, y, obj_fightBarrier)){
-	while(!place_meeting(x+sign(hspeed), y, obj_wall) && !place_meeting(x + hspeed, y, obj_fightBarrier)){
+	while(!place_meeting(x+ 2 * sign(hspeed), y, obj_wall) && !place_meeting(x + hspeed, y, obj_fightBarrier)){
 		x = x + sign(hspeed);
 	}
 	hspeed = 0;	
@@ -28,7 +28,7 @@ x = x + hspeed;
 
 //Vertical Collision
 if(place_meeting(x, y + vspeed, obj_wall)){
-	while(!place_meeting(x, y+sign(vspeed), obj_wall)){
+	while(!place_meeting(x, y + 2 * sign(vspeed), obj_wall)){
 		y = y + sign(vspeed);
 	}
 	vspeed = 0;	
