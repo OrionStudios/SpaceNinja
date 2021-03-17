@@ -1,0 +1,3 @@
+
+moving = false;
+running = false;
