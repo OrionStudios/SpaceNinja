@@ -9,7 +9,7 @@ if (hp <= 0 ){//if killed
 
 	
 	if (!running){//if player hasnt started dying
-		
+		audio_play_sound(CreatureDefeated_BarIncrease, 3, false);
 		running = true;//make it dying
 		alarm[1] = 100;//set alarm to despawn after out of range	
 		if (instance_exists(obj_fightBarrier)){
@@ -22,7 +22,19 @@ if (hp <= 0 ){//if killed
 	}
 	
 }
-
+if(distance_to_object(obj_player) < 100){
+	if (!moving){
+		moving = true;
+		path_position = pathStartPos;
+		path_start(movementPath, 1.5, path_action_reverse, false);
+	
+	}
+}else{
+	moving = false;	
+	pathStartPos = path_position;
+	path_end();
+	
+}
 if(instance_exists(obj_player)){//check if player exists
 	
 	if(obj_player.x != x){

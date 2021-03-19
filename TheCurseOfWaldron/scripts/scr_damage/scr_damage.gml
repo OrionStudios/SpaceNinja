@@ -4,7 +4,7 @@ function scr_damage(_damage)
 {
 
 	obj_player.hp -= _damage;
-	
+	audio_play_sound(HeartLost, 3, false);
 	if (obj_player.hp <= 0){
 		
 		instance_destroy(obj_player);	

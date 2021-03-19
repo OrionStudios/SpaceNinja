@@ -29,3 +29,4 @@ if (global.game_over) {//display gameover message if player has died
 	draw_text(room_width / 2, room_height / 2, "Game Over! Press R to restart.")
 }
 
+
