@@ -1,5 +1,6 @@
 if (hp <= 0 ){
-	xp += 10;
+	xp += eXP;
+	overallXP += eXP;
 	instance_destroy();
 
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_enemy1",
-    "path": "sprites/spr_enemy1/spr_enemy1.yy",
+    "name": "spr_falkor",
+    "path": "sprites/spr_falkor/spr_falkor.yy",
   },
   "solid": false,
   "visible": true,
@@ -35,6 +35,7 @@
   "overriddenProperties": [
     {"propertyId":{"name":"hp","path":"objects/obj_gregaloon/obj_gregaloon.yy",},"objectId":{"name":"obj_gregaloon","path":"objects/obj_gregaloon/obj_gregaloon.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"movementPath","path":"objects/obj_gregaloon/obj_gregaloon.yy",},"objectId":{"name":"obj_gregaloon","path":"objects/obj_gregaloon/obj_gregaloon.yy",},"value":"pathFigure8","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"eXP","path":"objects/obj_gregaloon/obj_gregaloon.yy",},"objectId":{"name":"obj_gregaloon","path":"objects/obj_gregaloon/obj_gregaloon.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Enemies",

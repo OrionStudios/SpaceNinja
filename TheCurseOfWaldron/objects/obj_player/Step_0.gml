@@ -8,12 +8,27 @@ key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 
 
 ////Calculate Movement
-var move = key_right - key_left;
 
-hspeed = move * walksp;
 
-var vertMove = key_down - key_up;
-vspeed = vertMove * walksp;
+if (!talking){
+	var move = key_right - key_left;
+	hspeed = move * walksp;
+
+	var vertMove = key_down - key_up;
+	vspeed = vertMove * walksp;
+	if (!canShoot){
+		if((training || trainingOver) && waitingToShoot ){
+			waitingToShoot = false;
+			alarm[0] = 10;
+		}
+	}
+}else{
+	
+	hspeed = 0;
+	vspeed = 0;
+	
+	
+}
 
 //Horizontal Collision
 if(place_meeting(x + hspeed, y, obj_wall) || place_meeting(x + hspeed, y, obj_fightBarrier)){
@@ -38,15 +53,77 @@ y = y + vspeed;
 
 //invert sprite for moving left and right
 if(hspeed != 0){
-	image_xscale = sign(hspeed);
+	sprite_index = spr_walkingRight;
+	//image_xscale = sign(hspeed);
+}
+if(hspeed == 0){
+	sprite_index = spr_walkingRight;
+	image_speed = 0;
 }
 
 //shoot magic
-if (canShoot && mouse_check_button(mb_left)){
-	instance_create_layer(x, y, "Instances", obj_magicBall);	
-	alarm[0] = shotCooldown;
-	canShoot = false;
+if (canShoot && mouse_check_button(mb_left) && !talking && !waitingToShoot){
+	
+	if (instance_exists(obj_grandpa)){
+		if (obj_grandpa.training && !obj_grandpa.trainingOver && !obj_grandpa.shooting){
+			instance_create_layer(x, y, "Training", obj_trainingMagic);
+			canShoot = false;
+			obj_grandpa.trainingOver = true;
+			trainingOver = true;
+			attacking = false;
+			alarm[2] = shotCooldown;
+			
+		}else{
+			instance_create_layer(x, y, "Instances", obj_magicBall);	
+			alarm[0] = shotCooldown;
+			canShoot = false;
+		}
+	}else{
+		instance_create_layer(x, y, "Instances", obj_magicBall);	
+		alarm[0] = shotCooldown;
+		canShoot = false;
+	}
+	
 
+	if (!attacking){
+		
+		attacking = true;
+
+}
+}
+
+
+
+if (talking){
+hspeed = 0;
+vspeed = 0
+}
+
+if(hspeed == 0 && !attacking){
+image_speed = 0;	
+}
+if (hspeed > 0 && vspeed == 0){
+	sprite_index = spr_walkingRight;
+	image_speed = 0.2;
+	
+}else if(hspeed < 0 && vspeed == 0){
+	sprite_index = spr_walkingLeft;
+	image_speed = 0.2;
+}else if(hspeed == 0 && vspeed < 0){
+	sprite_index = spr_walkingUp;
+	image_speed = 0.2;
+}else if(hspeed == 0 && vspeed > 0){
+	sprite_index = spr_walkingDown;
+	image_speed = 0.2;
+}
+
+if (attacking){
+	if (sign(mouse_x - x) > 0){
+		sprite_index = spr_attack_right;
+	}else{
+		sprite_index = spr_attack_left;
+	}
+	image_speed = 0.1;
 }
 
 if (canShield && mouse_check_button(mb_right)){

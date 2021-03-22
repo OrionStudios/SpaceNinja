@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_player",
-    "path": "sprites/spr_player/spr_player.yy",
+    "name": "spr_gregaloon",
+    "path": "sprites/spr_gregaloon/spr_gregaloon.yy",
   },
   "solid": false,
   "visible": true,

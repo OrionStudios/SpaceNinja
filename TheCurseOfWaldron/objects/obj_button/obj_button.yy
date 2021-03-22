@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_wall",
-    "path": "sprites/spr_wall/spr_wall.yy",
+    "name": "spr_nextBtn",
+    "path": "sprites/spr_nextBtn/spr_nextBtn.yy",
   },
   "solid": false,
   "visible": true,

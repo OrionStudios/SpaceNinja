@@ -1,6 +1,7 @@
-"Ah, you must be the boy. Don't worry, I've been awaiting your arrival."
-"What's going on? Where are my parents?"
-"The darkness is rising, but fear not, you've got a job to do. All will become clear in time... You must be what now, 11?"
-(Nods his head)
-"I see, no formal training yet then. Well there’s no time like the present. Follow me."
+Townsperson
+"We're so glad you're here!"
+Townsperson
+"The Gregaloons have gone dark, and we need your help!"
+
+
 

@@ -22,7 +22,7 @@ if (hp <= 0 ){//if killed
 	}
 	
 }
-if(distance_to_object(obj_player) < 100){
+if(distance_to_object(obj_player) < 1000){
 	if (!moving){
 		moving = true;
 		path_position = pathStartPos;
