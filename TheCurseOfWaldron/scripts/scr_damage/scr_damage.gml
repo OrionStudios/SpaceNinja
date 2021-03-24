@@ -3,16 +3,20 @@
 function scr_damage(_damage) 
 {
 
-	obj_player.hp -= _damage;
+	health -= _damage;
 	audio_play_sound(HeartLost, 3, false);
-	if (obj_player.hp <= 0){
+	if (health <= 0){
 		overallXP = lvl * 100;
 		xp = 0;
 		instance_destroy(obj_player);	
+		
 		lives --;
+		health = 3
 		
 		if (lives >= 0){
 			room_restart();
+		}else{
+			global.game_over = true;	
 		}
 	}
 }

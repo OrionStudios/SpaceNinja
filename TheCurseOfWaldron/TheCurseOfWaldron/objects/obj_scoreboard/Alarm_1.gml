@@ -1,2 +1,0 @@
-zoomXP = false;
-zooming = false;

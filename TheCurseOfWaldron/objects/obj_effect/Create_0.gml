@@ -7,7 +7,7 @@ charIndex = 0;
 index = 0;
 sentenceCount = 0;
 names = ds_list_create();
-
+sprite = 0;
 
 obj_player.talking = true;
 

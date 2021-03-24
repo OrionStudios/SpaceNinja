@@ -1,2 +1,2 @@
-moving = true;
+wyvMoving = true;
 

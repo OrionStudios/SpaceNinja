@@ -3,11 +3,11 @@ Townsperson
 Zave
 "Do you know anything about the dark magic or the missing wizards?"
 Townsperson
-"We feel it coming from the dark kingdom of Waldron, where King Augustus’ brother resides, but it’s growing, and our powers have been no match."
+"We feel it coming from the dark kingdom of Waldron, where King Augustus' brother resides, but it's growing, and our powers have been no match."
 Zave
 "I have an uncle? Why would he do something like that?"
 Townsperson
-"I don’t know much about him, just that he was the eldest son but never took the throne."
+"I don't know much about him, just that he was the eldest son but never took the throne."
 Townsperson
 "He left Zemira years ago, and no one knows what happened after he disappeared or why."
 Townsperson

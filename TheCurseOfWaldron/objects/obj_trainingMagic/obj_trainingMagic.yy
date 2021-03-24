@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_magicBall",
-    "path": "sprites/spr_magicBall/spr_magicBall.yy",
+    "name": "spr_trainingShot",
+    "path": "sprites/spr_trainingShot/spr_trainingShot.yy",
   },
   "solid": false,
   "visible": true,

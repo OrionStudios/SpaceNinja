@@ -9,7 +9,7 @@ talking = false;
 waitingToShoot = false;
 training = false;
 trainingOver = false;
-canShield = false;
+canShield = true;
 attacking = false;
 hp = 3;
 
@@ -27,6 +27,7 @@ switch (room) //rooms arent numbered in order for some reason
 		audio_play_sound(BattleMusicRooms1_3, 0, true);
 		break;
 	case 1://room 4
+		audio_stop_all();
 	case 0://room 5
 		audio_play_sound(BattleMusicRoom4_5, 0, true);
 }

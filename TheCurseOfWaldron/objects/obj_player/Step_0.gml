@@ -6,7 +6,7 @@ key_up= keyboard_check(vk_up) || keyboard_check(ord("W"));
 
 key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 
-
+show_debug_message(room);
 ////Calculate Movement
 
 
@@ -57,7 +57,7 @@ if(hspeed != 0){
 	//image_xscale = sign(hspeed);
 }
 if(hspeed == 0){
-	sprite_index = spr_walkingRight;
+	//sprite_index = spr_walkingRight;
 	image_speed = 0;
 }
 
@@ -66,9 +66,9 @@ if (canShoot && mouse_check_button(mb_left) && !talking && !waitingToShoot){
 	
 	if (instance_exists(obj_grandpa)){
 		if (obj_grandpa.training && !obj_grandpa.trainingOver && !obj_grandpa.shooting){
-			instance_create_layer(x, y, "Training", obj_trainingMagic);
+			instance_create_layer(x, y - 30, "Training", obj_trainingMagic);
 			canShoot = false;
-			obj_grandpa.trainingOver = true;
+			alarm[6] = 100;
 			trainingOver = true;
 			attacking = false;
 			alarm[2] = shotCooldown;
@@ -127,8 +127,12 @@ if (attacking){
 }
 
 if (canShield && mouse_check_button(mb_right)){
-	if (room >= 4){
-			instance_create_layer(x, y, "Instances", obj_shield)
+	if (true){
+			
+		canShield = false;
+		alarm[5] = room_speed * 10;//cooldown between shields
+		instance_create_layer(x, y, "Shield", obj_shield);
+
 	}
 }
 

@@ -1,1 +1,0 @@
-instance_create_layer(x + 1000, y + 100, "Button", obj_button);

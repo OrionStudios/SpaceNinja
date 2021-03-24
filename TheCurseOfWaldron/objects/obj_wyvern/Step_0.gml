@@ -1,13 +1,13 @@
 event_inherited();
-
+path_end();
 
 
 if (instance_exists(obj_player)){ //if player exists
-	if (obj_player.vspeed != 0){//if player is movng up or down
+	if (obj_player.vspeed != 0 && distance_to_object(obj_player) < 750){//if player is movng up or down
 		
 		
 		
-		if (moving){ //if wyvern is not moving
+		if (wyvMoving){ //if wyvern is not moving
 			vspeed = -obj_player.vspeed;			
 		}
 		if (!startingToMove){
@@ -17,7 +17,7 @@ if (instance_exists(obj_player)){ //if player exists
 		
 	}else{
 		startingToMove = false;
-		moving = false;
+		wyvMoving = false;
 		vspeed = 0;
 	}
 }
