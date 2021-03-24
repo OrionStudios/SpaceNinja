@@ -1,0 +1,1 @@
+obj_grandpa.trainingOver = true;

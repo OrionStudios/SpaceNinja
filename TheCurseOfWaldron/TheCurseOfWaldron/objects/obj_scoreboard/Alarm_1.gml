@@ -1,0 +1,2 @@
+zoomXP = false;
+zooming = false;

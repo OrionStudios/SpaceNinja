@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_uncle",
-    "path": "sprites/spr_uncle/spr_uncle.yy",
+    "name": "spr_albius",
+    "path": "sprites/spr_albius/spr_albius.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,7 +21,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_grandpa","path":"objects/obj_grandpa/obj_grandpa.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_grandpa","path":"objects/obj_grandpa/obj_grandpa.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_grandpa","path":"objects/obj_grandpa/obj_grandpa.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_grandpa","path":"objects/obj_grandpa/obj_grandpa.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

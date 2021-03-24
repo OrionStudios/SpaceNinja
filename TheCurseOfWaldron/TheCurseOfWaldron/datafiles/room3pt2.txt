@@ -1,0 +1,17 @@
+Townsperson
+Our town thanks you!
+Zave
+Do you know anything about my uncle?
+Townsperson
+Ah, yes, Vledd.
+Townsperson
+Rumor has it that he was inhabiting an abandoned castle north of here, which seems to be the source of the dark magic.
+Townsperson
+It doesn’t make any sense though. Vledd was born without magic.
+Townsperson
+If that’s where you’re headed though, you may want some intel first.
+Townsperson
+My friend Astra can help you.
+
+
+

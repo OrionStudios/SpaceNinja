@@ -1,1 +1,2 @@
 canShoot = true;
+attacking = false;

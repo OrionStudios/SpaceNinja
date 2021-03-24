@@ -4,3 +4,4 @@ if(instance_exists(obj_player)){//check if player exists
 
 }
 hp --;
+image_blend = make_colour_hsv(360, 0, 360 - (hp * 150));

@@ -2,7 +2,12 @@ globalvar lvl;
 lvl = 0;
 
 xpLabel = "Novice"
-
+resetting = false;
+tip = 1;
+tipShowing = false;
+showXP = false;
+zoomXP = false;
+zooming = false;
 globalvar xp;
 xp = 0;
 globalvar overallXP;
@@ -11,3 +16,4 @@ globalvar maxXP;
 maxXP =  100;
 
 lives = 3;
+health = 3;

@@ -1,2 +1,2 @@
-x = obj_effect.x + 1000;
-y = obj_effect.y + 100;
+x = obj_effect.x + 1025;
+y = obj_effect.y + 75;
