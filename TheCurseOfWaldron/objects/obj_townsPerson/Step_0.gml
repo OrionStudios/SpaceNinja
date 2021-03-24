@@ -24,6 +24,7 @@ case 3:
 	if (lvl == 3 && !talking){
 		talking = true;
 		scr_openTextFile("room2pt2.txt");	
+		
 	}
 	if(talking && !instance_exists(obj_effect) && !mapOpened){
 		mapOpened = true;

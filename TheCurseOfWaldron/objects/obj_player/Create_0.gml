@@ -6,11 +6,13 @@ if (room == 4){
 }else{
 	lastChecker = true;	
 }
+talkingPt2 = false;
 walksp = 2.4;
 tipShowing = false;
 shotCooldown = 30;
 talking = false;
 waitingToShoot = false;
+shootTraining = false;
 training = false;
 trainingOver = false;
 canShield = true;

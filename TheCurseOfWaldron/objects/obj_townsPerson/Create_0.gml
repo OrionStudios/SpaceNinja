@@ -3,7 +3,7 @@ talking = false;
 mapOpened = false;
 talkingToAstra = false;
 switch (room){
-case 5:	
+case 7:	
 		
 		
 	scr_openTextFile("room1.txt");
@@ -13,10 +13,10 @@ case 5:
 	
 	
 	break;
-case 2:
+case 3:
 	scr_openTextFile("room2.txt");
 	break;
-case 4:
+case 6:
 	scr_openTextFile("room3.txt");
 	break;
 }

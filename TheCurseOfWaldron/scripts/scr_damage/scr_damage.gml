@@ -11,7 +11,7 @@ function scr_damage(_damage)
 		instance_destroy(obj_player);	
 		
 		lives --;
-		health = 3
+		health = 3 + (3 * lvl)
 		
 		if (lives >= 0){
 			room_restart();

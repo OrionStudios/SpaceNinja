@@ -11,6 +11,7 @@ sprite = 0;
 if (room != 4){
 audio_play_sound(TownsPersonPopsup, 2, false);
 }
+goingAway = false;
 obj_player.talking = true;
 
 

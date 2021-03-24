@@ -1,6 +1,7 @@
 
 image_speed = 0;
-
+obj_player.talking = true;
+obj_player.talkingPt2 = true;
 switch (room){
 	case 4:
 	
@@ -20,4 +21,4 @@ switch (room){
 
 }
 image_index = i;
-	alarm[0] = 300;
+	alarm[0] = 100;

@@ -10,7 +10,7 @@ show_debug_message(room);
 ////Calculate Movement
 
 show_debug_message(room);
-if (!talking){
+if (!talking && !talkingPt2){
 	var move = key_right - key_left;
 	hspeed = move * walksp;
 
@@ -64,10 +64,41 @@ if(canShoot){
 	show_debug_message("Can Shoot");	
 }
 //shoot magic
-if (canShoot && mouse_check_button(mb_left) && !talking && !waitingToShoot && lastChecker){
+if (canShoot && mouse_check_button(mb_left) && !talking && !waitingToShoot && lastChecker && room != 3 && !instance_exists(obj_effect)){
 	
 	if (instance_exists(obj_grandpa)){
-		if (obj_grandpa.training && !obj_grandpa.trainingOver && !obj_grandpa.shooting){
+		if (shootTraining){
+			shootTraining = false;
+			instance_create_layer(x, y - 30, "Training", obj_trainingMagic);
+			canShoot = false;
+			alarm[6] = 100;
+			trainingOver = true;
+			attacking = false;
+			alarm[2] = shotCooldown;
+			
+		}else{
+			instance_create_layer(x, y, "Instances", obj_magicBall);	
+			alarm[0] = shotCooldown;
+			canShoot = false;
+				show_debug_message("Shot 1");
+		}
+	}else{
+		instance_create_layer(x, y, "Instances", obj_magicBall);	
+		alarm[0] = shotCooldown;
+			show_debug_message("Shot 2");
+		canShoot = false;
+	}
+	
+
+	if (!attacking){
+		
+		attacking = true;
+
+}
+}else if(canShoot && mouse_check_button(mb_left) && !talkingPt2 && !instance_exists(obj_effect)) {
+if (instance_exists(obj_grandpa)){
+		if (shootTraining){
+			shootTraining = false;
 			instance_create_layer(x, y - 30, "Training", obj_trainingMagic);
 			canShoot = false;
 			alarm[6] = 100;
@@ -130,7 +161,7 @@ if (attacking){
 	image_speed = 0.1;
 }
 
-if (canShield && mouse_check_button(mb_right)){
+if (canShield && mouse_check_button(mb_right) && room == 0){
 	if (true){
 			
 		canShield = false;

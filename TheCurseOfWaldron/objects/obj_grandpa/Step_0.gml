@@ -33,6 +33,7 @@ if(path_position == 1 && !instance_exists(obj_effect) && !training && !shooting)
 	obj_player.lastChecker = true;
 	//alarm[0] = 10;
 	//player can now shoot
+	obj_player.shootTraining = true;
 	obj_scoreboard.tip = 2;
 }
 
