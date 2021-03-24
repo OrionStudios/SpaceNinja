@@ -1,6 +1,7 @@
 moving = false;
 talking = false;
 mapOpened = false;
+talkingToAstra = false;
 switch (room){
 case 5:	
 		

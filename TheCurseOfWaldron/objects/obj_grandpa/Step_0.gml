@@ -2,6 +2,7 @@ if (!convoStarted && distance_to_object(obj_player) < 50){//if convo hasnt start
 	convoStarted = true;//start convo
 	talking = true//grandpa is talking
 	scr_openTextFile("room0.txt");//open dialogue file
+	obj_player.canShoot = false;
 
 }
 
@@ -10,6 +11,7 @@ if (!instance_exists(obj_effect) && !moving && convoStarted && path_position != 
 	moving = true;//grandpa is moving
 	path_start(path_grandpa, 1.3, path_action_stop, false);//along path
 	image_speed = .2;
+	obj_player.canShoot = false;
 }
 
 if (path_position == 1 && moving = true){//if moving on path and reached end
@@ -17,6 +19,7 @@ if (path_position == 1 && moving = true){//if moving on path and reached end
 	image_speed = 0;
 	scr_openTextFile("room0pt2.txt");//open dialogue file
 	talking = true;//grandpa is talking
+	obj_player.canShoot = false;
 
 		
 }
@@ -27,6 +30,7 @@ if(path_position == 1 && !instance_exists(obj_effect) && !training && !shooting)
 	training = true;//training started
 	obj_player.training = true;
 	obj_player.waitingToShoot = true;
+	obj_player.lastChecker = true;
 	//alarm[0] = 10;
 	//player can now shoot
 	obj_scoreboard.tip = 2;

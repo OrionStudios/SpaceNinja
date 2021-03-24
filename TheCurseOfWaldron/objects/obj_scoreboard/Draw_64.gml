@@ -45,6 +45,7 @@ if (global.game_over) {//display gameover message if player has died
 
 draw_set_font(fnt_big);
 draw_set_color(c_black);
+draw_set_halign(fa_left);
 switch (tip){
 	case 0: 
 		break;

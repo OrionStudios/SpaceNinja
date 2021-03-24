@@ -17,7 +17,8 @@ case "Albius":
 	sprite = 1;
 	break;
 case "Zave":
-	sprite = 0;
+
+	draw_sprite_ext(spr_walkingDown, 0, x + 35, y - 150, 1.4, 1.4, 0, c_white, 1);
 	break;
 case "Townsperson":
 	if(room == 5){
@@ -32,8 +33,10 @@ case "Astra":
 	sprite = 2;
 	draw_sprite_ext(spr_talkSprites, sprite, x + 35, y - 110, 1.2, 1.2, 0, c_white, 1);
 	break;
+
+
 }
 
-if (currentName != "Astra"){
+if (currentName != "Astra" && currentName != "Zave"){
 draw_sprite(spr_talkSprites, sprite, x + 35, y - 93);
 }

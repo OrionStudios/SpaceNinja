@@ -8,7 +8,9 @@ index = 0;
 sentenceCount = 0;
 names = ds_list_create();
 sprite = 0;
-
+if (room != 4){
+audio_play_sound(TownsPersonPopsup, 2, false);
+}
 obj_player.talking = true;
 
 
