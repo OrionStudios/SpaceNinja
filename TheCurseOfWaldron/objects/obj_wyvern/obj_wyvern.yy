@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"hp","path":"objects/obj_gregaloon/obj_gregaloon.yy",},"objectId":{"name":"obj_gregaloon","path":"objects/obj_gregaloon/obj_gregaloon.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"shotCooldown","path":"objects/obj_falkor/obj_falkor.yy",},"objectId":{"name":"obj_falkor","path":"objects/obj_falkor/obj_falkor.yy",},"value":"200","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"shotCooldown","path":"objects/obj_falkor/obj_falkor.yy",},"objectId":{"name":"obj_falkor","path":"objects/obj_falkor/obj_falkor.yy",},"value":"100","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Enemies",

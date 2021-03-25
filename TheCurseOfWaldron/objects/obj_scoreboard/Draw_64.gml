@@ -17,7 +17,7 @@ if(instance_exists(obj_player))
 
 }
 
-if (room != 5 && room != 2){
+if (room != 5 && room != 2 && showXP){
 	draw_healthbar(8, 250, 256, 279, xp, $FFFFFFFF & $FFFFFF, c_blue,c_blue, 0, (($FFFFFFFF>>24) != 0), (($FFFFFFFF>>24) != 0));
 	if (zoomXP){
 		if (!zooming){
@@ -90,6 +90,8 @@ switch (tip){
 			tipShowing = true;
 			
 		}
+	case 5:
+		draw_text_ext(600, 400, "Enter the castle to confront your uncle", 50, 1000);
 }
 
 //if (room == 3 && showTip ){

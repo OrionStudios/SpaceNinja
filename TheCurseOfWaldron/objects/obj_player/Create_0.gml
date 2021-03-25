@@ -23,3 +23,6 @@ show_debug_message(room);
 if(room == 4){
 obj_scoreboard.tip = 1;	
 }
+if (room == 0){
+canShield = true;	
+}

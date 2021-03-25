@@ -19,8 +19,6 @@ if (hp <= 0 ){//if killed
 		canShoot = false;
 		alarm[1] = 100;//set alarm to despawn after out of range	
 		if (instance_exists(obj_fightBarrier)){
-			
-
 			instance_nearest(x, y, obj_fightBarrier).numOfEnemies -= 1;
 		}
 	xp += eXP;//give player xp
