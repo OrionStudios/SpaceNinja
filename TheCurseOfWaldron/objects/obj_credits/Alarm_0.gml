@@ -1,0 +1,1 @@
+instance_create_layer(x + 100, y + 600, "Button", obj_button);

@@ -8,12 +8,14 @@ obj_effect.alarm[0] = room_speed * interval;
 alarm[0] = 20;
 }else if (room == 5){
 room_goto_next();	
-}else{
-	show_debug_message("Creating button")
+}else if (!instance_exists(obj_credits)){
+	
 	object_set_visible(obj_credits, true);
 	instance_create_layer(x - 400 , y - 550, "Button", obj_credits);
 
 	instance_destroy(instance_nearest(x, y, obj_background));
 	alarm[0] = 20
 	
+}else if (instance_exists(obj_credits)){
+game_restart();	
 }

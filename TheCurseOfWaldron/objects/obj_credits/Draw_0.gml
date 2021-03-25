@@ -1,7 +1,7 @@
 
 draw_set_color(c_white);
 if (room == 2){
-	show_debug_message("Should be drawing");
+
 	draw_set_halign(fa_center);
 	for(i = 0; i < array_length(contributors); i++){
 		if (i % 2 == 1){
@@ -10,6 +10,10 @@ if (room == 2){
 			draw_set_font(fnt_name);	
 		}
 		draw_text(x + 80, y + 70 + (50 * i), contributors[i]);
+	}
+	if(!instance_exists(obj_background) && !showingNext){
+		showingNext = true;
+		alarm[0] = 100;
 	}
 	
 }else if (room == 5 && instance_exists(obj_menuBtn)){

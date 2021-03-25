@@ -6,4 +6,5 @@ cheats = ["Alt + L:      Add Level",
 		  "Alt + N:      Go to next room",
 		  "Alt + B:      Go to last room"]
 object_set_visible(obj_credits, true);
+showingNext = false;
 

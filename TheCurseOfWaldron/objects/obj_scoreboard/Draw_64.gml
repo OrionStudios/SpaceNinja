@@ -31,7 +31,7 @@ if (room != 5 && room != 2 && showXP){
 	}
 		draw_set_font(fnt_level);
 		draw_set_color(c_black);
-		draw_text(275, 250, "Level " + string(lvl));
+		
 		
 		
 		draw_text(8, 225, obj_scoreboard.xpLabel);
@@ -90,8 +90,15 @@ switch (tip){
 			tipShowing = true;
 			
 		}
+		break;
 	case 5:
-		draw_text_ext(600, 400, "Enter the castle to confront your uncle", 50, 1000);
+		draw_text_ext(600, 400, "Destroy The Ruby in Order to Defeat Your Uncle", 50, 1000);
+			if (!tipShowing){
+			
+			alarm[0] = 300;
+			tipShowing = true;
+			
+		}
 }
 
 //if (room == 3 && showTip ){

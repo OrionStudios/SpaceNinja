@@ -22,6 +22,9 @@ function scr_damage(_damage)
 			case 3: health = 10;
 			break;
 		}
+		if (room == 0 || room == 1){
+		health = 10;	
+		}
 		
 		if (lives >= 0){
 			room_restart();

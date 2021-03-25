@@ -6,10 +6,10 @@ draw_set_color(c_black);
 draw_self();
 draw_text_ext(x, y + 20, string(string_copy(sentence, 1, charIndex)), 20, 950);
 draw_set_font(fnt_name);
+
 currentName = string_letters(ds_list_find_value(names, index));
 draw_text(x,y - 20, currentName);
-show_debug_message(currentName);
-show_debug_message(currentName);
+
 switch (currentName){
 	
 
