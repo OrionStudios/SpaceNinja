@@ -52,4 +52,11 @@ case 6:
 	}
 	
 	break;
+	case 1:
+		if (xp == 50 && !showingShield){
+			showingShield = true;
+			scr_openTextFile("room4.txt");
+			obj_player.canShield = true;
+		}
+		break;
 }

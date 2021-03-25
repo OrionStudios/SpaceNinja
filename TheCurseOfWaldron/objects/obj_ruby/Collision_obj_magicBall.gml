@@ -18,3 +18,7 @@ if (overallXP < playerMaxXP){
 instance_destroy(other);
 
 uncleMagic -= 10;
+if (uncleMagic <= 0){
+	obj_uncle.talking = true;
+scr_openTextFile("room5.txt");
+}

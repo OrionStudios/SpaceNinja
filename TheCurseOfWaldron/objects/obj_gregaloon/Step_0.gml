@@ -1,3 +1,8 @@
+if (global.pause == 1){
+path_speed = 0;
+moving = false;
+exit;
+}
 if (hp <= 0 ){//if killed
 
 

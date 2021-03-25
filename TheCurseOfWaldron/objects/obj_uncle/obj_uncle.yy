@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_wyvern",
-    "path": "objects/obj_wyvern/obj_wyvern.yy",
+    "name": "obj_falkor",
+    "path": "objects/obj_falkor/obj_falkor.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,11 +25,14 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":2,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_uncle","path":"objects/obj_uncle/obj_uncle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_uncle","path":"objects/obj_uncle/obj_uncle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_magicBall","path":"objects/obj_magicBall/obj_magicBall.yy",},"parent":{"name":"obj_uncle","path":"objects/obj_uncle/obj_uncle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_uncle","path":"objects/obj_uncle/obj_uncle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"hp","path":"objects/obj_gregaloon/obj_gregaloon.yy",},"objectId":{"name":"obj_gregaloon","path":"objects/obj_gregaloon/obj_gregaloon.yy",},"value":"10","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"shotCooldown","path":"objects/obj_falkor/obj_falkor.yy",},"objectId":{"name":"obj_falkor","path":"objects/obj_falkor/obj_falkor.yy",},"value":"200","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"shotCooldown","path":"objects/obj_falkor/obj_falkor.yy",},"objectId":{"name":"obj_falkor","path":"objects/obj_falkor/obj_falkor.yy",},"value":"150","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Enemies",

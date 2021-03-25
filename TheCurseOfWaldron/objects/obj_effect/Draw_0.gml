@@ -33,8 +33,9 @@ case "Astra":
 	sprite = 2;
 	draw_sprite_ext(spr_talkSprites, sprite, x + 35, y - 110, 1.2, 1.2, 0, c_white, 1);
 	break;
-
-
+case "King Augustus":
+	sprite = 6;
+	break;
 }
 
 if (currentName != "Astra" && currentName != "Zave"){

@@ -1,3 +1,9 @@
+if (global.pause == 1){
+	hspeed = 0;
+image_index = 0;
+vspeed = 0;
+exit;	
+}
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
@@ -95,7 +101,7 @@ if (canShoot && mouse_check_button(mb_left) && !talking && !waitingToShoot && la
 		attacking = true;
 
 }
-}else if(canShoot && mouse_check_button(mb_left) && !talkingPt2 && !instance_exists(obj_effect)) {
+}else if(canShoot && mouse_check_button(mb_left) && !talkingPt2  && !instance_exists(obj_effect)) {
 if (instance_exists(obj_grandpa)){
 		if (shootTraining){
 			shootTraining = false;
@@ -110,12 +116,12 @@ if (instance_exists(obj_grandpa)){
 			instance_create_layer(x, y, "Instances", obj_magicBall);	
 			alarm[0] = shotCooldown;
 			canShoot = false;
-				show_debug_message("Shot 1");
+				show_debug_message("Shot 5");
 		}
 	}else{
 		instance_create_layer(x, y, "Instances", obj_magicBall);	
 		alarm[0] = shotCooldown;
-			show_debug_message("Shot 2");
+			show_debug_message("Shot 6");
 		canShoot = false;
 	}
 	
@@ -161,13 +167,19 @@ if (attacking){
 	image_speed = 0.1;
 }
 
-if (canShield && mouse_check_button(mb_right) && room == 0){
-	if (true){
-			
+if (canShield && mouse_check_button(mb_right)){
+	if (!usingShield){
+		usingShield = true;
 		canShield = false;
 		alarm[5] = room_speed * 10;//cooldown between shields
 		instance_create_layer(x, y, "Shield", obj_shield);
 
 	}
 }
+	if (instance_exists(obj_lvlExit)){
+		if (distance_to_object(obj_lvlExit) < 700){
+			obj_scoreboard.tip = 4;
+		}
+	}
+
 

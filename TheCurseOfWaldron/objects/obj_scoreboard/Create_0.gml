@@ -1,6 +1,7 @@
 globalvar lvl;
 lvl = 0;
-
+global.pause = 0;
+showing = false;
 xpLabel = "Novice"
 resetting = false;
 tip = 0;

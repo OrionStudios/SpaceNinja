@@ -15,8 +15,9 @@ waitingToShoot = false;
 shootTraining = false;
 training = false;
 trainingOver = false;
-canShield = true;
+canShield = false;
 attacking = false;
+usingShield = false;
 hp = 3;
 show_debug_message(room);
 if(room == 4){

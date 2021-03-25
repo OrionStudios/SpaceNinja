@@ -20,7 +20,7 @@ if (path_position == 1 && moving = true){//if moving on path and reached end
 	scr_openTextFile("room0pt2.txt");//open dialogue file
 	talking = true;//grandpa is talking
 	obj_player.canShoot = false;
-
+	
 		
 }
 
@@ -28,8 +28,9 @@ if(path_position == 1 && !instance_exists(obj_effect) && !training && !shooting)
 	
 	talking = false;//not talking
 	training = true;//training started
+	obj_player.talkingPt2 = true;
 	obj_player.training = true;
-	obj_player.waitingToShoot = true;
+	obj_player.waitingToShoot = false;
 	obj_player.lastChecker = true;
 	//alarm[0] = 10;
 	//player can now shoot

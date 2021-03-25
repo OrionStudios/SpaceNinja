@@ -4,3 +4,4 @@ hit = false;
 moving = false;
 running = false;
 canShoot = false;
+path_start(movementPath, 1.5, path_action_reverse, false);

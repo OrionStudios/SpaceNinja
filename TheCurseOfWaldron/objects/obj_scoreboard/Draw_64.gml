@@ -17,8 +17,8 @@ if(instance_exists(obj_player))
 
 }
 
-if (showXP){
-	draw_healthbar(8, 200, 256, 224, xp, $FFFFFFFF & $FFFFFF, c_blue,c_blue, 0, (($FFFFFFFF>>24) != 0), (($FFFFFFFF>>24) != 0));
+if (room != 5){
+	draw_healthbar(8, 250, 256, 279, xp, $FFFFFFFF & $FFFFFF, c_blue,c_blue, 0, (($FFFFFFFF>>24) != 0), (($FFFFFFFF>>24) != 0));
 	if (zoomXP){
 		if (!zooming){
 			zooming = true;
@@ -26,14 +26,12 @@ if (showXP){
 		}
 		draw_set_font(fnt_big);
 	}
+		draw_set_font(fnt_level);
+		draw_set_color(c_black);
+		draw_text(275, 250, "Level " + string(lvl));
 		
-		draw_text(8, 350, lvl);
-		draw_set_color(c_white);
-		draw_text(10, 200, xp);
-		draw_text(5, 220, "XP");
-		draw_text(70, 200, overallXP);
-		draw_text(40, 220, "Overall");
-		draw_text(8, 130, obj_scoreboard.xpLabel);
+		
+		draw_text(8, 225, obj_scoreboard.xpLabel);
 	
 }
 if (global.game_over) {//display gameover message if player has died
@@ -55,7 +53,7 @@ switch (tip){
 		draw_text_ext(600, 400, "Use your WASD keys to move around and begin your journey", 50, 1000);
 		if (!tipShowing){
 			
-			alarm[0] = 500;
+			alarm[0] = 300;
 			tipShowing = true;
 		}
 		break;
@@ -65,7 +63,7 @@ switch (tip){
 		draw_text_ext(600, 400, "Use your mouse's left click to activate your magic.", 50, 1000);
 		if (!tipShowing){
 			
-			alarm[0] = 500;
+			alarm[0] = 300;
 			tipShowing = true;
 		}
 		break;
@@ -75,13 +73,22 @@ switch (tip){
 		showXP = true;
 		if (!tipShowing){
 			
-			alarm[0] = 500;
+			alarm[0] = 300;
 			tipShowing = true;
 			
 		}
 		break;
-	
+	case 4:
+		draw_text_ext(600, 400, "Enter the castle to confront your uncle", 50, 1000);
+			
+		if (!tipShowing){
+			
+			alarm[0] = 300;
+			tipShowing = true;
+			
+		}
 }
+
 //if (room == 3 && showTip ){
 //	draw_text(800, 500, "Use your WASD keys to move around and begin your journey");
 //	if (!tipShowing){

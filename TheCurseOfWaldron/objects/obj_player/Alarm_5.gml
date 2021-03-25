@@ -1,1 +1,2 @@
 canShield = true;
+usingShield = false;
