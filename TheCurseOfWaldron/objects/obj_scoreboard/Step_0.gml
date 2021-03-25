@@ -2,7 +2,7 @@
 
 
 if (overallXP >= maxXP){//if player reaches maxXP needed to level up
-	
+
 	maxXP += 100;
 	audio_play_sound(NewXPLevel, 6, false);
 	alarm[2] = 100;

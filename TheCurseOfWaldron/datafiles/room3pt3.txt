@@ -1,11 +1,11 @@
+stra
+"I see a prison. It appears to have many captives."
 Astra
-I see a prison. It appears to have many captives.
+"There is a man with a very powerful artifact. These prisoners seem to be powering the artifact."
 Astra
-There is a man with a very powerful artifact. These prisoners seem to be powering the artifact.
+"This man is heavily guarded and channeling dark magic into his army."
 Astra
-This man is heavily guarded and channeling dark magic into his army.
-Astra
-If this is where you're headed, stay safe.
+"If this is where you're headed, stay safe."
 
 
 

@@ -17,14 +17,17 @@ if(instance_exists(obj_player))
 
 }
 
-if (room != 5){
+if (room != 5 && room != 2){
 	draw_healthbar(8, 250, 256, 279, xp, $FFFFFFFF & $FFFFFF, c_blue,c_blue, 0, (($FFFFFFFF>>24) != 0), (($FFFFFFFF>>24) != 0));
 	if (zoomXP){
 		if (!zooming){
+			draw_set_font(fnt_big);
 			zooming = true;
 			alarm[1] = 200;
 		}
 		draw_set_font(fnt_big);
+	}else{
+		draw_set_font(fnt_level);
 	}
 		draw_set_font(fnt_level);
 		draw_set_color(c_black);

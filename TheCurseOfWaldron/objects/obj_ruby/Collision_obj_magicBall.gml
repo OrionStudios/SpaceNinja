@@ -14,11 +14,13 @@ if (overallXP < playerMaxXP){
 		xp = 25;	
 	}
 }
+audio_play_sound(RubyTakingDamage, 9, false);
 // Destroy the light magic projectile
 instance_destroy(other);
 
 uncleMagic -= 10;
-if (uncleMagic <= 0){
-	obj_uncle.talking = true;
-scr_openTextFile("room5.txt");
+if (uncleMagic <= 0 && !obj_uncle.talking){
+	audio_play_sound(RubyDestroyed_UncleDefeated, 0, false);
+instance_destroy();
 }
+

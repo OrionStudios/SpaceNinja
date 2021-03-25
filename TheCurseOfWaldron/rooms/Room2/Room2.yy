@@ -476,7 +476,6 @@
         {"properties":[
             {"propertyId":{"name":"numOfEnemies","path":"objects/obj_fightBarrier/obj_fightBarrier.yy",},"objectId":{"name":"obj_fightBarrier","path":"objects/obj_fightBarrier/obj_fightBarrier.yy",},"value":"4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_fightBarrier","path":"objects/obj_fightBarrier/obj_fightBarrier.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":7.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3008.0,"y":1184.0,"resourceVersion":"1.0","name":"inst_16EF7B93","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_lvlExit","path":"objects/obj_lvlExit/obj_lvlExit.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":5.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4000.0,"y":1184.0,"resourceVersion":"1.0","name":"inst_481A3E77","tags":[],"resourceType":"GMRInstance",},
       ],"visible":false,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Walls","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":{"name":"spr_backgroundGrass","path":"sprites/spr_backgroundGrass/spr_backgroundGrass.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
@@ -496,7 +495,6 @@
     {"name":"inst_1347D292","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_52711A5D","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_16EF7B93","path":"rooms/Room2/Room2.yy",},
-    {"name":"inst_481A3E77","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_5514A76","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_74263BEB","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_CFD4352","path":"rooms/Room2/Room2.yy",},

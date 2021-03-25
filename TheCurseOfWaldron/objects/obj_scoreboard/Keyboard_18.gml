@@ -2,8 +2,9 @@ if(keyboard_check_pressed(ord("N"))){
 	if (room != 5){
 	alarm[2] = 1
 	
-	maxXP += overallXP + 100;
 	overallXP = lvl * 100;
+	maxXP = overallXP + 100;
+	
 
 	}
 	room_goto_next();	//skip room

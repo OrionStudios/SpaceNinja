@@ -45,12 +45,12 @@ if (trainingOver && !talking){
 }
 
 if (trainingOver && !instance_exists(obj_effect) && !shooting){
-	show_debug_message("Showing after there ya go")
+	
 	shooting = true;
 	training = false
 	trainingOver = false;
 	if (talking){
-		obj_grandpa.zoomXP = true;
+		obj_scoreboard.zoomXP = true;
 		
 		talking = false;
 		obj_player.waitingToShoot = true;
