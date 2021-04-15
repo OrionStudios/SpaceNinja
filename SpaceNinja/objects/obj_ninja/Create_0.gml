@@ -1,9 +1,11 @@
-hspd = 0;
+hsp = 0;
 vsp = 0;
-grv = 0.3;
+grv = 0.5;
 walksp = 10;
-
+grabbing = false;
+pulling = false;
 climbing = false;
 climb_speed = 5;
+canDoubleJump = false;
 instance_create_layer(x, y, "GunLayer", obj_blaster)
 //gravity = .5;

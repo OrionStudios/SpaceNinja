@@ -1,0 +1,1 @@
+takingDamage = false;

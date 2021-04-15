@@ -9,18 +9,63 @@ if (place_meeting(x, y + grv, obj_platform)){//if platform is 10 pixels below
 y += grv;//move down regular if not touching platform
 
 
-
- if (place_meeting(x + 1, y, obj_ninja)){//if ninja is 1 pixel to the right
-	 show_debug_message("Hello1");
-		if(!place_meeting(x - 1, y, obj_platform)){
-			show_debug_message("Hello2");//if platfrom isnt on left
-		x -= 4;//move 4 pixels to the left
+if(!beingGrabbed){//if not being grabbed
+			if (place_meeting(x + 1, y, obj_ninja)){//if ninja is 1 pixel to the right
+		show_debug_message("Hello1");
+		if(!place_meeting(x - 1, y, obj_platform)){//if platfrom isnt on left
+			show_debug_message("Hello2");
+			x -= 4;//move 4 pixels to the left
 		}
-		
 	}else if (place_meeting(x - 1, y, obj_ninja)){//if ninja is 1 pixel to the left
 		show_debug_message("Hello3");
 		if(!place_meeting(x + 4, y, obj_platform)){//if platfrom isnt on right
-		x += 4;//move 4 pixels to the right
-		show_debug_message("Hello4");
+			x += 4;//move 4 pixels to the right
+			show_debug_message("Hello4");
+		}
 	}
+}else{//if being grabbed
+	show_debug_message("Being Grabbed6");
+	var ninja = instance_nearest(x, y, obj_ninja);
+	
+	if(ninja.x < x){//if ninja is to the left of the crate
+		show_debug_message("On Left");
+		if (ninja.hsp < 0){//if ninja is moving to the left 
+			beingPulled = true;
+		}else {//if ninja is not moving to the left
+			beingPulled = false;
+		}
+	}else if(ninja.x > x){//if ninja is to the right of the crate
+		show_debug_message("On Right");
+		if (ninja.hsp > 0){//if ninja is moving to the right
+			beingPulled = true;
+		}else {//if ninja is not moving to the left
+			beingPulled = false;
+		}
 	}
+	
+	if(beingPulled){//if being pulled
+		show_debug_message("Being Pulled")
+		ninja.pulling = true;
+		//ninja.hsp = sign(ninja.hsp) * 4
+		if(!place_meeting(x + ninja.hsp, y, obj_platform)){//if platfrom isnt in way
+			x += ninja.hsp;//move with the ninja 
+		}
+	}else{
+		ninja.pulling = false;
+
+		if (place_meeting(x + 1, y, obj_ninja)){//if ninja is 1 pixel to the right
+			show_debug_message("Hello1");
+			if(!place_meeting(x - 1, y, obj_platform)){//if platfrom isnt on left
+				show_debug_message("Hello2");
+				x -= 4;//move 4 pixels to the left
+			}
+		}else if (place_meeting(x - 1, y, obj_ninja)){//if ninja is 1 pixel to the left
+			show_debug_message("Hello3");
+			if(!place_meeting(x + 4, y, obj_platform)){//if platfrom isnt on right
+				x += 4;//move 4 pixels to the right
+				show_debug_message("Hello4");
+			}
+		}
+	}
+}
+beingGrabbed = false;
