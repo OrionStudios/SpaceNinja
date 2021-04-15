@@ -1,0 +1,1 @@
+hspeed = 15 * obj_ninja.image_xscale;
