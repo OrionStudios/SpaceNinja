@@ -1,6 +1,7 @@
 hsp = 0;
 vsp = 0;
 grv = 0.5;
+canTakeDamage = true;
 walksp = 10;
 grabbing = false;
 pulling = false;

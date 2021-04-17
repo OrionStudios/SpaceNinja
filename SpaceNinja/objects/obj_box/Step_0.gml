@@ -11,16 +11,14 @@ y += grv;//move down regular if not touching platform
 
 if(!beingGrabbed){//if not being grabbed
 			if (place_meeting(x + 1, y, obj_ninja)){//if ninja is 1 pixel to the right
-		show_debug_message("Hello1");
-		if(!place_meeting(x - 1, y, obj_platform)){//if platfrom isnt on left
-			show_debug_message("Hello2");
+		
+		if(!place_meeting(x - 4, y, obj_platform) && !place_meeting(x - 4, y, obj_alien1)){//if platfrom isnt on left
 			x -= 4;//move 4 pixels to the left
 		}
 	}else if (place_meeting(x - 1, y, obj_ninja)){//if ninja is 1 pixel to the left
-		show_debug_message("Hello3");
-		if(!place_meeting(x + 4, y, obj_platform)){//if platfrom isnt on right
+	
+		if(!place_meeting(x + 4, y, obj_platform) && !place_meeting(x - 4, y, obj_alien1)){//if platfrom isnt on right
 			x += 4;//move 4 pixels to the right
-			show_debug_message("Hello4");
 		}
 	}
 }else{//if being grabbed
@@ -46,7 +44,7 @@ if(!beingGrabbed){//if not being grabbed
 	if(beingPulled){//if being pulled
 		show_debug_message("Being Pulled")
 		ninja.pulling = true;
-		//ninja.hsp = sign(ninja.hsp) * 4
+		
 		if(!place_meeting(x + ninja.hsp, y, obj_platform)){//if platfrom isnt in way
 			x += ninja.hsp;//move with the ninja 
 		}
@@ -54,16 +52,14 @@ if(!beingGrabbed){//if not being grabbed
 		ninja.pulling = false;
 
 		if (place_meeting(x + 1, y, obj_ninja)){//if ninja is 1 pixel to the right
-			show_debug_message("Hello1");
-			if(!place_meeting(x - 1, y, obj_platform)){//if platfrom isnt on left
-				show_debug_message("Hello2");
+		
+			if(!place_meeting(x - 4, y, obj_platform) && !place_meeting(x - 4, y, obj_alien1)){//if platfrom isnt on left
 				x -= 4;//move 4 pixels to the left
 			}
 		}else if (place_meeting(x - 1, y, obj_ninja)){//if ninja is 1 pixel to the left
-			show_debug_message("Hello3");
-			if(!place_meeting(x + 4, y, obj_platform)){//if platfrom isnt on right
+		
+			if(!place_meeting(x + 4, y, obj_platform) && !place_meeting(x - 4, y, obj_alien1)){//if platfrom isnt on right
 				x += 4;//move 4 pixels to the right
-				show_debug_message("Hello4");
 			}
 		}
 	}

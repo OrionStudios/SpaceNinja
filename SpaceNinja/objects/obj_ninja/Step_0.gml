@@ -8,6 +8,7 @@ hsp = move * walksp;
 
 vsp = vsp + grv//jump speed with gravity
 
+
 if (instance_place(x, y, obj_ladder)){
 	
 	if (keyboard_check(vk_up) || keyboard_check(vk_down)){
