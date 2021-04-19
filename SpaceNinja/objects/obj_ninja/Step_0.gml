@@ -5,7 +5,7 @@ key_grab = keyboard_check(ord("G"));
 var move = key_right - key_left;//Right = 1, Left = -1, Still = 0
 walksp = 10;
 hsp = move * walksp;
-
+crouching = keyboard_check(ord("C"));
 vsp = vsp + grv//jump speed with gravity
 
 
@@ -54,16 +54,26 @@ if(climbing){
 	
 }else{//if not climbing
 	if(!grabbing){//if not grabbing
+		if(crouching){
+			key_jump = false;
+			sprite_index = spr_ninjaCrouch;
+		}else{
+			if(!place_meeting(x, y - sprite_height, obj_platform)){
+				sprite_index = spr_ninja;
+			}else{
+				key_jump = false;
+			}
 		
+		}
 		if(key_grab && place_meeting(x +  (image_xscale * 10), y - 10, obj_box)){//if grab key is pressed and box is in move distance
 				grabbing = true;	
 		}
 
 		if ((place_meeting(x, y + 1, obj_platform) || place_meeting(x, y + 1, obj_box))&& key_jump){//if touching platform or crate and pressed jump
-			vsp = -15;
+			vsp = -35;
 			canDoubleJump = true;
 		}else if(canDoubleJump && key_jump){
-			vsp = -15;
+			vsp = -35;
 			canDoubleJump = false;
 		}
 	

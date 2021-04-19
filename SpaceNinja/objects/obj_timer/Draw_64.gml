@@ -1,0 +1,1 @@
+draw_healthbar(x - 20, y - 105, x + 20, y - 100, (alarm_get(0) / (room_speed) * 200) * 100 , $FFFFFFFF & $FFFFFF, c_blue,c_blue, 0, (($FFFFFFFF>>24) != 0), (($FFFFFFFF>>24) != 0));

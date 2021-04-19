@@ -1,6 +1,8 @@
 {
   "resources": [
+    {"id":{"name":"obj_alien2","path":"objects/obj_alien2/obj_alien2.yy",},"order":12,},
     {"id":{"name":"obj_alien1","path":"objects/obj_alien1/obj_alien1.yy",},"order":8,},
+    {"id":{"name":"spr_alien2","path":"sprites/spr_alien2/spr_alien2.yy",},"order":17,},
     {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},"order":6,},
     {"id":{"name":"obj_scoreboard","path":"objects/obj_scoreboard/obj_scoreboard.yy",},"order":11,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":7,},
@@ -15,6 +17,7 @@
     {"id":{"name":"spr_blaster","path":"sprites/spr_blaster/spr_blaster.yy",},"order":3,},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},"order":8,},
     {"id":{"name":"scr_move","path":"scripts/scr_move/scr_move.yy",},"order":0,},
+    {"id":{"name":"spr_ninjaLife","path":"sprites/spr_ninjaLife/spr_ninjaLife.yy",},"order":18,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":1,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":10,},
     {"id":{"name":"spr_blasterShot","path":"sprites/spr_blasterShot/spr_blasterShot.yy",},"order":4,},
@@ -22,6 +25,7 @@
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"order":9,},
     {"id":{"name":"Timeline1","path":"timelines/Timeline1/Timeline1.yy",},"order":0,},
     {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},"order":2,},
+    {"id":{"name":"spr_ninjaCrouch","path":"sprites/spr_ninjaCrouch/spr_ninjaCrouch.yy",},"order":19,},
     {"id":{"name":"obj_ladder","path":"objects/obj_ladder/obj_ladder.yy",},"order":5,},
     {"id":{"name":"obj_blasterShot","path":"objects/obj_blasterShot/obj_blasterShot.yy",},"order":4,},
     {"id":{"name":"spr_barrel","path":"sprites/spr_barrel/spr_barrel.yy",},"order":12,},
@@ -31,6 +35,7 @@
     {"id":{"name":"spr_alien1","path":"sprites/spr_alien1/spr_alien1.yy",},"order":14,},
     {"id":{"name":"obj_barrel","path":"objects/obj_barrel/obj_barrel.yy",},"order":7,},
     {"id":{"name":"spr_wallSmall","path":"sprites/spr_wallSmall/spr_wallSmall.yy",},"order":10,},
+    {"id":{"name":"obj_timer","path":"objects/obj_timer/obj_timer.yy",},"order":13,},
     {"id":{"name":"blasterShot","path":"sprites/blasterShot/blasterShot.yy",},"order":13,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
@@ -48,8 +53,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
