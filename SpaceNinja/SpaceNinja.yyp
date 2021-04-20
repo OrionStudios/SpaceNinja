@@ -25,6 +25,7 @@
     {"id":{"name":"spr_ladder","path":"sprites/spr_ladder/spr_ladder.yy",},"order":5,},
     {"id":{"name":"spr_ninjaHealth","path":"sprites/spr_ninjaHealth/spr_ninjaHealth.yy",},"order":26,},
     {"id":{"name":"spr_blaster","path":"sprites/spr_blaster/spr_blaster.yy",},"order":3,},
+    {"id":{"name":"Shader1","path":"shaders/Shader1/Shader1.yy",},"order":0,},
     {"id":{"name":"scr_move","path":"scripts/scr_move/scr_move.yy",},"order":0,},
     {"id":{"name":"spr_ninjaLife","path":"sprites/spr_ninjaLife/spr_ninjaLife.yy",},"order":17,},
     {"id":{"name":"spr_lifeConsumable","path":"sprites/spr_lifeConsumable/spr_lifeConsumable.yy",},"order":28,},
