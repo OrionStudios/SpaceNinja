@@ -7,7 +7,7 @@ if (collision_circle(x, y, 300, obj_explosion, false, true) && !takingDamage){
 
 grv = 10;
 
-
+dropChance = irandom_range(0, 100);
 switch(state){
 	case "move_right": 
 		hsp = moveSpeed;

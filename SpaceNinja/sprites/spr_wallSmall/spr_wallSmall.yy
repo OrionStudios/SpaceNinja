@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1588ff22-bb40-4a48-bc5d-39de61877d93","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Platforms",
+    "path": "folders/Sprites/Platforms.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_wallSmall",

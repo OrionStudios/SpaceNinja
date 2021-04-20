@@ -5,13 +5,13 @@ key_grab = keyboard_check(ord("G"));
 var move = key_right - key_left;//Right = 1, Left = -1, Still = 0
 walksp = 10;
 hsp = move * walksp;
-crouching = keyboard_check(ord("C"));
+key_crouch = keyboard_check(ord("C"));
 vsp = vsp + grv//jump speed with gravity
 
 
-if (instance_place(x, y, obj_ladder)){
+if (instance_place(x, y, obj_ladder)){//if touching ladder
 	
-	if (keyboard_check(vk_up) || keyboard_check(vk_down)){
+	if (keyboard_check(vk_up) || keyboard_check(vk_down)){//if trying to move up or down ladder
 		canDoubleJump = true;
 		climbing = true;
 		//vspeed = 0;
@@ -20,14 +20,20 @@ if (instance_place(x, y, obj_ladder)){
 	}
 
 }else{
+	if(climbing){//if still in climbing state but not touching ladder
+		vsp = 0;//reset vsp
+	}
 	climbing = false;
 	//sprite_index = spr_player;
 }
 
 if(climbing){
 		
-	if (keyboard_check(vk_up)){//if holding up
+	if (keyboard_check(vk_up) && !place_meeting(x, y - climb_speed, obj_platform)){//if holding up
 		vsp = climb_speed;
+			if(!place_meeting(x, y - sign(vsp), obj_platform)){//if not 1 pixel from ground
+			y += sign(climb_speed);//move 1 pixel towards ground
+		}
 		y -= climb_speed;//go up
 	}
 
@@ -54,13 +60,17 @@ if(climbing){
 	
 }else{//if not climbing
 	if(!grabbing){//if not grabbing
-		if(crouching){
+		if(place_meeting(x, y + 1, obj_floatingPlatform)){
+			var platform = instance_nearest(x, y, obj_floatingPlatform);
+		x += platform.hsp
+		}
+		if(key_crouch){
 			key_jump = false;
 			sprite_index = spr_ninjaCrouch;
 		}else{
 			if(!place_meeting(x, y - sprite_height, obj_platform)){
 				sprite_index = spr_ninja;
-			}else{
+			}else if(sprite_index == spr_ninjaCrouch){
 				key_jump = false;
 			}
 		
@@ -77,8 +87,8 @@ if(climbing){
 			canDoubleJump = false;
 		}
 	
-		if(place_meeting(x + hsp, y, obj_platform) || place_meeting(x + hsp, y, obj_box)){//if platform or box is within move distance
-			while(!place_meeting(x + sign(hsp), y, obj_platform) && !place_meeting(x + sign(hsp), y, obj_box)){//while platform and box arent 1 pixel away
+		if(place_meeting(x + hsp, y, obj_platform) || place_meeting(x + hsp, y, obj_box) || place_meeting(x + hsp, y, obj_spikePlatform)){//if platform or box is within move distance
+			while(!place_meeting(x + sign(hsp), y, obj_platform) && !place_meeting(x + sign(hsp), y, obj_box) && !place_meeting(x + sign(hsp), y, obj_spikePlatform)){//while platform and box arent 1 pixel away
 				x += sign(hsp);//move forward 1 pixel
 			}
 			hsp = 0;//ninja within 1 pixel of platform or box so stop moving

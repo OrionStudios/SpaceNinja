@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "platforms",
+    "path": "folders/Objects/platforms.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_wall",
