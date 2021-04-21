@@ -12,7 +12,7 @@ walksp = 10;
 hsp = move * walksp;
 
 vsp = vsp + grv//jump speed with gravity
-if(obj_timer.timesUp){
+if(obj_timer.timesUp || instance_exists(obj_intro)){
 	key_left = false;
 	key_right = false;
 	key_jump = false;

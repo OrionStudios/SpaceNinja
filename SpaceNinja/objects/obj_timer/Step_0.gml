@@ -7,3 +7,6 @@ if(timesUp){
 room_restart();	
 	}
 }
+if(instance_exists(obj_intro)){
+	alarm[0] ++;
+}
