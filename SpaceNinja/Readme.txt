@@ -29,10 +29,9 @@ Instructions:
 
 	Controls:
 	Up Arrow - Jump Double tapping allows player to double jump | Hold W to climb up ladders
-	Down Arrow - Climb down ladders	
+	Down Arrow - Climb down ladders	| Hold to crouch
 	Left Arrow - Move left
 	Right Arrow - Move right
-	C - Hold to duck 
 	G - Hold to grab a box 
 	Spacebar - shoot energy projectiles
 	
