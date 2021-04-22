@@ -15,4 +15,5 @@ moreEnemies = true;
 
 }else{
 	moreEnemies = false;
+	showMoreEnemies = false;
 }

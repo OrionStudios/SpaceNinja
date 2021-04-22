@@ -14,7 +14,7 @@ minuteStr = string(minute);
 currentTime = hourStr + minuteStr;
 
 draw_rectangle_color(785, 40, 960, 125, c_black, c_black, c_black, c_black, false);
-draw_text_ext_transformed(800, 40, currentTime, 30, 100, 4, 4, 0);
+draw_text_ext_transformed(810, 30, currentTime, 30, 100, 4, 4, 0);
 
 
 if(timesUp){

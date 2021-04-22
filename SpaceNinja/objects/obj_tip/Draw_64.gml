@@ -11,6 +11,9 @@ if(giveTip){
 		
 			draw_text_ext_transformed_color(900, 200, "Watch your head, spikes will instantly kill you", 20, 300, 3, 3, 0, c_red, c_red, c_red, c_red, 1);
 			break;
+		case 2:
+			draw_text_ext_transformed_color(900, 200, "Grab the box with 'G'", 20, 300, 3, 3, 0, c_white, c_white, c_white, c_white, 1);
+			break;
 	}
 	draw_set_halign(fa_left);
 }

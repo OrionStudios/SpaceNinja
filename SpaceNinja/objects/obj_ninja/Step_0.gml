@@ -4,7 +4,7 @@ key_jump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 key_climb = keyboard_check(vk_up) || keyboard_check(ord("W"));
 key_grab = keyboard_check(ord("G"));
-key_crouch = keyboard_check(ord("C"));
+
 
 
 var move = key_right - key_left;//Right = 1, Left = -1, Still = 0
@@ -18,7 +18,7 @@ if(obj_timer.timesUp || instance_exists(obj_intro)){
 	key_jump = false;
 	key_down = false;
 	key_climb = false;
-	key_crouch = false;
+	
 	key_grab = false;
 	move = 0;
 	walksp = 0;
@@ -81,7 +81,7 @@ if(climbing){
 			var platform = instance_nearest(x, y, obj_floatingPlatform);
 		x += platform.hsp
 		}
-		if(key_crouch){
+		if((key_down && place_meeting(x, y + 1, obj_platform))){
 			key_jump = false;
 			sprite_index = spr_ninjaCrouch;
 		}else{
