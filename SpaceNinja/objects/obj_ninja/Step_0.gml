@@ -77,10 +77,18 @@ if(climbing){
 	
 }else{//if not climbing
 	if(!grabbing){//if not grabbing
-		if(place_meeting(x, y + 1, obj_floatingPlatform)){
-			var platform = instance_nearest(x, y, obj_floatingPlatform);
-		x += platform.hsp
-		}
+		
+		
+		
+			 if(place_meeting(x, y + 1, obj_floatingPlatform)){
+					var platform = instance_nearest(x, y, obj_floatingPlatform);
+					if(platform.vertical){
+						y+= platform.vsp;
+					}else{
+						x += platform.hsp;
+					}
+			}
+		
 		if((key_down && place_meeting(x, y + 1, obj_platform))){
 			key_jump = false;
 			sprite_index = spr_ninjaCrouch;
@@ -96,7 +104,7 @@ if(climbing){
 				grabbing = true;	
 		}
 
-		if ((place_meeting(x, y + 1, obj_platform) || place_meeting(x, y + 1, obj_box))&& key_jump){//if touching platform or crate and pressed jump
+		if ((place_meeting(x, y + 5, obj_platform) || place_meeting(x, y + 5, obj_box))&& key_jump){//if touching platform or crate and pressed jump
 			vsp = -35;
 			canDoubleJump = true;
 		}else if(canDoubleJump && key_jump){
@@ -127,7 +135,15 @@ if(climbing){
 		y += vsp;//not near ground continue falling
 		
 	}else{//if grabbing crate
-		
+		var box = instance_nearest(x, y, obj_box);
+		if(place_meeting(x, y + 1, obj_floatingPlatform) || box.place_meeting(x, y + 1, obj_floatingPlatform)){
+			var platform = instance_nearest(x, y, obj_floatingPlatform);
+			if(platform.vertical){
+				y+= platform.vsp;
+			}else{
+				x += platform.hsp;
+			}
+		}
 		if(place_meeting(x, y + vsp, obj_platform) || place_meeting(x, y + vsp, obj_box)){//if platform or box is within jump distance
 			while(!place_meeting(x, y + sign(vsp), obj_platform) && !place_meeting(x, y + sign(vsp), obj_box)){//if not 1 pixel from ground
 				y += sign(vsp);//move 1 pixel towards ground

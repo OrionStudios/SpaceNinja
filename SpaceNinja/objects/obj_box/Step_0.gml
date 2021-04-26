@@ -5,9 +5,20 @@ if (place_meeting(x, y + grv, obj_platform)){//if platform is 10 pixels below
 		}
 		grv = 0;//move down 4 pixels
 }
-
-y += grv;//move down regular if not touching platform
-
+if(place_meeting(x, y + 10, obj_floatingPlatform)){
+	onPlatform = true;
+}
+if(onPlatform){
+	var platform = instance_nearest(x, y, obj_floatingPlatform);
+	if(platform.vertical){
+		grv = platform.vsp;	
+	}else{
+		x += platform.hsp;
+		}
+}
+	
+	y += grv;//move down regular if not touching platform
+	
 
 if(!beingGrabbed){//if not being grabbed
 			if (place_meeting(x + 1, y, obj_ninja)){//if ninja is 1 pixel to the right
