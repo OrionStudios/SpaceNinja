@@ -9,4 +9,8 @@ room_restart();
 }
 if(instance_exists(obj_intro)){
 	alarm[0] ++;
+}else if(!counting){
+		counting = true;
+		audio_play_sound(snd_clockTick, 4, false);
 }
+

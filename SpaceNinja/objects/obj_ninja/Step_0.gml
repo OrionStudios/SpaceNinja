@@ -10,7 +10,7 @@ key_grab = keyboard_check(ord("G"));
 var move = key_right - key_left;//Right = 1, Left = -1, Still = 0
 walksp = 10;
 hsp = move * walksp;
-
+show_debug_message(room);
 vsp = vsp + grv//jump speed with gravity
 if(obj_timer.timesUp || instance_exists(obj_intro)){
 	key_left = false;
