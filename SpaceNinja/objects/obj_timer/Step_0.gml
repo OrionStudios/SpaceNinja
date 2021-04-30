@@ -10,7 +10,15 @@ room_restart();
 if(instance_exists(obj_intro)){
 	alarm[0] ++;
 }else if(!counting){
+	if(room == 5){
+		instance_create_layer(x, y, "FlashLayer", obj_flash)
+	}
 		counting = true;
-		audio_play_sound(snd_clockTick, 4, false);
+		alarm[1] = 20;
+		//audio_play_sound(snd_clockTick, 4, false);
+}
+
+if (alarm[0] == 600){
+	audio_play_sound(snd_clockTick, 4, false);
 }
 

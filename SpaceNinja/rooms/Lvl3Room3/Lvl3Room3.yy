@@ -14,7 +14,6 @@
   ],
   "layers": [
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_timer","path":"objects/obj_timer/obj_timer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":1024.0,"resourceVersion":"1.0","name":"inst_42785EF1","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1760.0,"y":6240.0,"resourceVersion":"1.0","name":"inst_6FCB3C4A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1888.0,"y":6240.0,"resourceVersion":"1.0","name":"inst_23EEFC6A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1632.0,"y":6240.0,"resourceVersion":"1.0","name":"inst_248A68BE","tags":[],"resourceType":"GMRInstance",},
@@ -38,7 +37,6 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_56218E5E","path":"rooms/Lvl3Room3/Lvl3Room3.yy",},
-    {"name":"inst_42785EF1","path":"rooms/Lvl3Room3/Lvl3Room3.yy",},
     {"name":"inst_6FCB3C4A","path":"rooms/Lvl3Room3/Lvl3Room3.yy",},
     {"name":"inst_23EEFC6A","path":"rooms/Lvl3Room3/Lvl3Room3.yy",},
     {"name":"inst_248A68BE","path":"rooms/Lvl3Room3/Lvl3Room3.yy",},

@@ -27,6 +27,7 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"moveSpeed","path":"objects/obj_alien1/obj_alien1.yy",},"objectId":{"name":"obj_alien1","path":"objects/obj_alien1/obj_alien1.yy",},"value":"10","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hp","path":"objects/obj_alien1/obj_alien1.yy",},"objectId":{"name":"obj_alien1","path":"objects/obj_alien1/obj_alien1.yy",},"value":"40","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Objects",

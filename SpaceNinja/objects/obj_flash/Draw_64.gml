@@ -7,8 +7,8 @@ draw_set_alpha(1);
 
 waiting = false;
 }else{
-	if(!waiting){
+	if(!waiting && !instance_exists(obj_intro)){
 		waiting = true;	
-		alarm[0] = 200
-	}
+		alarm[0] = 108
+		}
 }

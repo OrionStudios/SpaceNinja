@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-show_debug_message("DESTROYED")
+
+audio_play_sound(snd_enterStage, 6, false);

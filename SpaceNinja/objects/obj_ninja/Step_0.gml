@@ -25,6 +25,21 @@ if(obj_timer.timesUp || instance_exists(obj_intro)){
 	vsp = 0;
 }
 
+if(instance_exists(obj_nextLvlDoor)){
+	if (obj_nextLvlDoor.opening){
+		key_left = false;
+		key_right = false;
+		key_jump = false;
+		key_down = false;
+		key_climb = false;
+	
+		key_grab = false;
+		move = 0;
+		walksp = 0;
+		hsp = 0;
+		vsp = 0;
+	}
+}
 if (instance_place(x, y, obj_ladder)){//if touching ladder
 	
 	if (key_climb || key_down){//if trying to move up or down ladder
@@ -139,6 +154,19 @@ if(climbing){
 		y += vsp;//not near ground continue falling
 		
 	}else{//if grabbing crate
+			if((key_down && place_meeting(x, y + 1, obj_platform))){//if pressing crouch key and touching ground
+			key_jump = false;//not able to jump
+			crouching = true;//crouching
+			//sprite_index = spr_ninjaCrouch;
+		}else{//if not pressing crouch or not touching ground
+			if(!place_meeting(x, y - sprite_height, obj_platform)){//if platform is not above ninja
+				//sprite_index = spr_ninjawalk;
+				crouching = false;//no longer crouching
+			}else if(sprite_index == spr_ninjaCrouch){//if platform above ninja while crouching
+				key_jump = false;//cant jump
+			}
+		
+		}
 		var box = instance_nearest(x, y, obj_box);
 		if(place_meeting(x, y + 1, obj_floatingPlatform) || box.place_meeting(x, y + 1, obj_floatingPlatform)){
 			var platform = instance_nearest(x, y, obj_floatingPlatform);
@@ -203,10 +231,10 @@ if(!dj){
 		sprite_index = spr_ninjaStand;
 	}else if(!place_meeting(x, y + 20, obj_platform)){
 		sprite_index = spr_ninjaJump;	
-	}else if(hsp != 0 && place_meeting(x, y + 4, obj_platform) && !crouching){
+	}else if(hsp != 0 && place_meeting(x, y + 4, obj_platform) && !crouching || (move != 0 && distance_to_object(obj_box) < 4 && !crouching)){
 		image_speed = 0.17;
 		sprite_index = spr_ninjawalk;
-	}else if(hsp != 0 && place_meeting(x, y + 4, obj_platform) && crouching){
+	}else if(hsp != 0 && place_meeting(x, y + 4, obj_platform) && crouching || (move != 0 && distance_to_object(obj_box) < 4 && crouching)){
 		image_speed = 0.17;
 		sprite_index = spr_ninjaCrouch;
 	}else if(hsp == 0 && crouching){
