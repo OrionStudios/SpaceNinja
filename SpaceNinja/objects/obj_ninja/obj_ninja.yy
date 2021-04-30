@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_ninja",
-    "path": "sprites/spr_ninja/spr_ninja.yy",
+    "name": "spr_ninjawalk",
+    "path": "sprites/spr_ninjawalk/spr_ninjawalk.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,6 +27,7 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_alien1","path":"objects/obj_alien1/obj_alien1.yy",},"parent":{"name":"obj_ninja","path":"objects/obj_ninja/obj_ninja.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_ninja","path":"objects/obj_ninja/obj_ninja.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_ninja","path":"objects/obj_ninja/obj_ninja.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_ninja","path":"objects/obj_ninja/obj_ninja.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":0,"value":"50","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"hp","tags":[],"resourceType":"GMObjectProperty",},

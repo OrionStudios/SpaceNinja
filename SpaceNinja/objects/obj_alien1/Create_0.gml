@@ -3,7 +3,7 @@ state = "";
 hsp = 0;
 grv = 10;
 agro = false;
-
+image_speed = 0.25
 timeline_index = Timeline1;//set timeline
 timeline_position = startPosition;//set initial direction to left or right
 timeline_running = true;

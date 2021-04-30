@@ -4,14 +4,19 @@ show_debug_message("ROOM");
 show_debug_message(room);
 timesUp = false;
 counting = false;
+	audio_stop_sound(snd_clockTick);
 switch(room){
 	
-	case 0:
+	
 
 	case 7://Lvl1Room1
+	
 	case 5://Lvl2Room1
 	case 1://Lvl2Room2
 	case 3://Lvl3Room1
+	case 2://Lvl3Room2
+	case 0://Lvl3Room3
+	//case 4://Credits
 	alarm[0] = 3600 * 2;
 	
 	

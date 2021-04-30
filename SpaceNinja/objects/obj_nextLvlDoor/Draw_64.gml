@@ -3,5 +3,9 @@ draw_text_ext_transformed_color(500, 150, "You must kill all enemies in the room
 }
 
 if(opening){
-	draw_sprite(spr_phase1Comp, 0, 750, 500);
+	if(room == 7){
+		draw_sprite(spr_phase1Comp, 0, 500, 200);
+	}else if(room == 1){
+		draw_sprite(spr_phase2Comp, 0, 500, 200);
+	}
 }

@@ -1,6 +1,8 @@
 hsp = 0;
 vsp = 0;
 global.energy = 25;
+crouching = false;
+dj = false;
 grv = 2.5;
 canTakeDamage = true;
 walksp = 10;

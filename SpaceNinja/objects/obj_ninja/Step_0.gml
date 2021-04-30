@@ -6,7 +6,6 @@ key_climb = keyboard_check(vk_up) || keyboard_check(ord("W"));
 key_grab = keyboard_check(ord("G"));
 
 
-
 var move = key_right - key_left;//Right = 1, Left = -1, Still = 0
 walksp = 10;
 hsp = move * walksp;
@@ -89,14 +88,16 @@ if(climbing){
 					}
 			}
 		
-		if((key_down && place_meeting(x, y + 1, obj_platform))){
-			key_jump = false;
-			sprite_index = spr_ninjaCrouch;
-		}else{
-			if(!place_meeting(x, y - sprite_height, obj_platform)){
-				sprite_index = spr_ninja;
-			}else if(sprite_index == spr_ninjaCrouch){
-				key_jump = false;
+		if((key_down && place_meeting(x, y + 1, obj_platform))){//if pressing crouch key and touching ground
+			key_jump = false;//not able to jump
+			crouching = true;//crouching
+			//sprite_index = spr_ninjaCrouch;
+		}else{//if not pressing crouch or not touching ground
+			if(!place_meeting(x, y - sprite_height, obj_platform)){//if platform is not above ninja
+				//sprite_index = spr_ninjawalk;
+				crouching = false;//no longer crouching
+			}else if(sprite_index == spr_ninjaCrouch){//if platform above ninja while crouching
+				key_jump = false;//cant jump
 			}
 		
 		}
@@ -107,7 +108,10 @@ if(climbing){
 		if ((place_meeting(x, y + 5, obj_platform) || place_meeting(x, y + 5, obj_box))&& key_jump){//if touching platform or crate and pressed jump
 			vsp = -35;
 			canDoubleJump = true;
+
 		}else if(canDoubleJump && key_jump){
+			dj = true;
+			alarm[1] = 12;
 			vsp = -35;
 			canDoubleJump = false;
 		}
@@ -188,7 +192,32 @@ if(climbing){
 	}
 }
 
+if(crouching){
+mask_index = spr_ninjaCrouch;
+}else{
+mask_index = spr_ninjaStand	
+}
+if(!dj){
+	if(climbing){
+		image_speed = 0;
+		sprite_index = spr_ninjaStand;
+	}else if(!place_meeting(x, y + 20, obj_platform)){
+		sprite_index = spr_ninjaJump;	
+	}else if(hsp != 0 && place_meeting(x, y + 4, obj_platform) && !crouching){
+		image_speed = 0.17;
+		sprite_index = spr_ninjawalk;
+	}else if(hsp != 0 && place_meeting(x, y + 4, obj_platform) && crouching){
+		image_speed = 0.17;
+		sprite_index = spr_ninjaCrouch;
+	}else if(hsp == 0 && crouching){
+		image_speed = 0;
+		sprite_index = spr_ninjaCrouchStill;
+	}else if(hsp == 0 && !crouching){
+		image_speed = 0;
+		sprite_index = spr_ninjaStand;
+	}
 
-
-
+}else{
+	sprite_index = spr_ninjaStand;
+}
 
