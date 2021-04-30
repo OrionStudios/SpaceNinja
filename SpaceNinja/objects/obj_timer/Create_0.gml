@@ -10,16 +10,19 @@ switch(room){
 	
 
 	case 7://Lvl1Room1
-	alarm[0] = 3600 * 2;
+
+	startTime = 3600 * 2;
 	break;
 	case 5://Lvl2Room1
-	alarm[0] = 3600 * 3;
+	
+	startTime = 3600 * 3;
 	break;
 	case 1://Lvl2Room2
 	case 3://Lvl3Room1
-	alarm[0] = 3600 * 3;
+	
+	startTime = 3600 * 3;
 	break;
-	case 2://Lvl3Room
+	case 2://Lvl3Room2
 	case 0://Lvl3Room3
 	//case 4://Credits
 	
@@ -27,3 +30,4 @@ switch(room){
 	
 	break;
 }
+alarm[0] = startTime;

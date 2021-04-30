@@ -3,5 +3,12 @@
 if (global.hp <= 0){
 	lives --;
 	global.hp = 3;
-	room_restart();
+	if (room == 7 || room == 5 || room == 3){
+		room_restart();
+	}else if(room == 1){
+		room_goto(5);	
+	}else if(room == 2 || room == 0){
+		room_goto(3);	
+	}
+	obj_timer.alarm[0] = obj_timer.startTime;
 }
