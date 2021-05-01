@@ -4,4 +4,3 @@ global.hp = 3;
 paused = false;
 lives = 3;
 i = 0;
-tempBlastTime = -1;

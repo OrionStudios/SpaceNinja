@@ -1,16 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (global.hp <= 0){
-	lives --;
-	global.hp = 3;
-	if (room == 7 || room == 5 || room == 3){
-		room_restart();
-	}else if(room == 1){
-		room_goto(5);	
-	}else if(room == 2 || room == 0){
-		room_goto(3);	
+	
+	if(lives == 0){
+		
+		audio_play_sound(snd_gameReset, 4, false);
+	}else{
+		global.hp = 3;
+		obj_timer.alarm[0] = obj_timer.startTime;
+		
+		if (room == 7 || room == 5 || room == 3){
+			room_restart();
+		}else if(room == 1){
+			room_goto(5);	
+		}else if(room == 2 || room == 0){
+			room_goto(3);	
+		}
+		
+		audio_play_sound(snd_lvlReset, 4, false);
+		obj_timer.alarm[0] = obj_timer.startTime;
 	}
-	obj_timer.alarm[0] = obj_timer.startTime;
+	lives --;
 }
 
 if(paused){
