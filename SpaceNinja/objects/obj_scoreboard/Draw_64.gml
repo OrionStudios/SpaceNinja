@@ -35,3 +35,7 @@ if(lastEnergyBar == 0){
 }
 draw_rectangle_color(40, 920 - (30 * (numOfEnergyBars - 1)), 40 + ((lastEnergyBar / 5) * 80), 940 - (30 * (numOfEnergyBars - 1)), c_green, c_green, c_green, c_green, false);	
 }
+
+if(paused){
+draw_sprite(spr_inGameMenu, 0, 960, 400);	
+}

@@ -19,7 +19,7 @@ switch(state){
 }
 
 image_xscale = sign(hsp);
-
+if(!obj_scoreboard.paused){
 	if(agro){//if agroed onto ninja
 		timeline_running = false;//stop timeline
 		if(!collision_line(x,y, x + agroRange * sign(hsp), y, obj_ninja, false, true)){//if ninja isnt in line of sight
@@ -55,3 +55,4 @@ image_xscale = sign(hsp);
 			}
 			
 	}
+}

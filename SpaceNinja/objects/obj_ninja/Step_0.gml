@@ -11,7 +11,7 @@ walksp = 10;
 hsp = move * walksp;
 show_debug_message(room);
 vsp = vsp + grv//jump speed with gravity
-if(obj_timer.timesUp || instance_exists(obj_intro)){
+if(obj_timer.timesUp || instance_exists(obj_intro) || obj_scoreboard.paused){
 	key_left = false;
 	key_right = false;
 	key_jump = false;

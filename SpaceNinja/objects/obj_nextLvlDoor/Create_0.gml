@@ -3,3 +3,4 @@
 moreEnemies = true;
 opening = false;
 showMoreEnemies = false;
+showPushButton = false;

@@ -12,3 +12,53 @@ if (global.hp <= 0){
 	}
 	obj_timer.alarm[0] = obj_timer.startTime;
 }
+
+if(paused){
+	if(instance_exists(obj_floatingPlatform)){
+		obj_floatingPlatform.timeline_running = false;
+		obj_floatingPlatform.hsp = 0
+		obj_floatingPlatform.vsp = 0
+	}
+	
+	obj_blaster.canShoot = false
+	
+	if(i % 3 = 0){
+			obj_blaster.alarm[0] ++;	
+	}
+	if(instance_exists(obj_alien1)){
+		obj_alien1.image_speed = 0;
+	}
+i++
+if(i % 3 = 0){
+	obj_timer.alarm[0] ++;
+}
+	if(instance_exists(obj_spike)){
+		if(obj_spike.alarm[0] > 0){
+			if(i % 3 = 0){
+				obj_spike.alarm[0] ++;	
+			}
+		}else if (obj_spike.alarm[1] > 0){
+			if(i % 3 = 0){
+				obj_spike.alarm[1] ++;	
+			}
+		}else if (obj_spike.alarm[2] > 0){
+			if(i % 3 = 0){
+				obj_spike.alarm[2] ++;	
+			}
+		}else if (obj_spike.alarm[3] > 0){
+			if(i % 3 = 0){
+				obj_spike.alarm[3] ++;	
+			}
+		}
+	}
+}else{
+	i = 0;
+	if(instance_exists(obj_floatingPlatform)){
+		obj_floatingPlatform.timeline_running = true;
+	}
+	if(instance_exists(obj_alien1)){
+		obj_alien1.image_speed = 0.25;
+	}
+}
+	
+	

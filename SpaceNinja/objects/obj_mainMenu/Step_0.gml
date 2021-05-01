@@ -5,6 +5,8 @@ if(screen_index == 0){
 		if(mouse_y >= camera_get_view_y(view_camera[0]) + 615 && mouse_y <= camera_get_view_y(view_camera[0]) + 675){
 			if(mouse_check_button_pressed(mb_left)){
 				audio_play_sound(snd_menuSelect, 3, false);
+				audio_stop_sound(snd_winGame);
+				audio_play_sound(snd_intro, 5, true);
 				sprite_index = spr_gameIntro;
 				screen_index = 2;
 			}
@@ -26,7 +28,4 @@ if(screen_index == 0){
 			}
 		}
 	}
-}else if(screen_index == 2){
-	
 }
-mouse_check_button_pressed(mb_left)

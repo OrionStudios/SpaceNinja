@@ -5,6 +5,7 @@ show_debug_message(room);
 timesUp = false;
 counting = false;
 	audio_stop_sound(snd_clockTick);
+	draw_set_halign(fa_center);
 switch(room){
 	
 	

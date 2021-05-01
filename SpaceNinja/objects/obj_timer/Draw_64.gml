@@ -13,9 +13,9 @@ minuteStr = string(minute);
 }
 currentTime = hourStr + minuteStr;
 
-draw_rectangle_color(790, 40, 990, 125, c_black, c_black, c_black, c_black, false);
+draw_rectangle_color(860, 40, 1060, 125, c_black, c_black, c_black, c_black, false);
 draw_set_font(Font2);
-draw_text_ext_transformed(810, 45, currentTime, 30, 100, 4, 4, 0);
+draw_text_ext_transformed(960, 45, currentTime, 30, 100, 4, 4, 0);
 
 
 if(timesUp){

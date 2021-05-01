@@ -53,6 +53,7 @@
     {"id":{"name":"spr_phase1Pt1","path":"sprites/spr_phase1Pt1/spr_phase1Pt1.yy",},"order":4,},
     {"id":{"name":"Sprite22","path":"sprites/Sprite22/Sprite22.yy",},"order":15,},
     {"id":{"name":"spr_blasterShot","path":"sprites/spr_blasterShot/spr_blasterShot.yy",},"order":4,},
+    {"id":{"name":"spr_inGameMenu","path":"sprites/spr_inGameMenu/spr_inGameMenu.yy",},"order":16,},
     {"id":{"name":"spr_walLarge","path":"sprites/spr_walLarge/spr_walLarge.yy",},"order":6,},
     {"id":{"name":"spr_credits","path":"sprites/spr_credits/spr_credits.yy",},"order":10,},
     {"id":{"name":"spr_phase2","path":"sprites/spr_phase2/spr_phase2.yy",},"order":5,},
