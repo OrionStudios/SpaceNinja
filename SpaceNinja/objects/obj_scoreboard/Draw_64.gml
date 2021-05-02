@@ -4,13 +4,14 @@ if(room != 4 && room != 6){
 		//draw healthbar based off players health
 	
 		//draw_healthbar(8, 8, 256, 32, obj_player.hp, $FFFFFFFF & $FFFFFF, c_red,c_red, 0, (($FFFFFFFF>>24) != 0), (($FFFFFFFF>>24) != 0));
-draw_healthbar(50, 50, 300, 100, global.hp, c_black, c_red, c_red, 0, true, false);
+draw_healthbar(50, 50, 300, 100, global.hp, c_black, c_green, c_green, 0, true, false);
 		for (var i = 0; i < global.hp; i++){
 
 			//draw_sprite(spr_ninjaHealth, 0, (40 + 75 * i), 45); //draws number of hearts player has
 		}
 		for (var i = 0; i < lives; i++){
 			//draws number of lives player has
+			draw_text(55+75, 200, string(lives));
 			draw_sprite(spr_ninjaLife, 0, (55 + 75 * i), 125);//draws number of lives ninja has	
 		}
 

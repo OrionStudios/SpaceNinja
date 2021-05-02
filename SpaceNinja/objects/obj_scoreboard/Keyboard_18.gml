@@ -8,7 +8,7 @@ room_goto(6)
 	obj_timer.alarm[0] = obj_timer.startTime;
 room_restart();
 }else if (keyboard_check_pressed(ord("M"))){
-obj_timer.alarm[0] += 1200;
+obj_timer.alarm[0] += 3600;
 }else if (keyboard_check_pressed(ord("L"))){
 lives ++;
 global.hp = 100;

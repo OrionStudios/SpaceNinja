@@ -74,10 +74,15 @@ if(i % 3 = 0 && !instance_exists(obj_intro)){
 				}
 			}else if(mouse_y >= camera_get_view_y(view_camera[0]) + 440 && mouse_y <= camera_get_view_y(view_camera[0]) + 510){
 				if(mouse_check_button_pressed(mb_left)){
-					paused  = true;
+					paused  = false;
 					
-					obj_timer.alarm[0] = obj_timer.startTime;
-					room_restart();
+					obj_timer.alarm[0] = obj_timer.startTime
+					audio_stop_all();
+					instance_destroy(obj_timer);
+					instance_destroy(obj_flash);
+						instance_destroy();	
+					
+			
 				}
 			}else if(mouse_y >= camera_get_view_y(view_camera[0]) + 510 && mouse_y <= camera_get_view_y(view_camera[0]) + 570){
 				if(mouse_check_button_pressed(mb_left)){

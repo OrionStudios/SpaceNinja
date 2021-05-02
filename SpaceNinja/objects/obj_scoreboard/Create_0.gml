@@ -4,4 +4,5 @@ global.hp = 100;
 paused = false;
 lives = 3;
 i = 0;
+j = 0;
 pauseInd = 0;

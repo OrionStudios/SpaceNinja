@@ -33,18 +33,18 @@ if(!beingGrabbed){//if not being grabbed
 		}
 	}
 }else{//if being grabbed
-	show_debug_message("Being Grabbed6");
+
 	var ninja = instance_nearest(x, y, obj_ninja);
 	
 	if(ninja.x < x){//if ninja is to the left of the crate
-		show_debug_message("On Left");
+	
 		if (ninja.hsp < 0){//if ninja is moving to the left 
 			beingPulled = true;
 		}else {//if ninja is not moving to the left
 			beingPulled = false;
 		}
 	}else if(ninja.x > x){//if ninja is to the right of the crate
-		show_debug_message("On Right");
+
 		if (ninja.hsp > 0){//if ninja is moving to the right
 			beingPulled = true;
 		}else {//if ninja is not moving to the left
@@ -53,7 +53,7 @@ if(!beingGrabbed){//if not being grabbed
 	}
 	
 	if(beingPulled){//if being pulled
-		show_debug_message("Being Pulled")
+
 		ninja.pulling = true;
 		
 		if(!place_meeting(x + ninja.hsp, y, obj_platform)){//if platfrom isnt in way

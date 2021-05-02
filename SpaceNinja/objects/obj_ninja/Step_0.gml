@@ -9,22 +9,23 @@ key_grab = keyboard_check(ord("G"));
 var move = key_right - key_left;//Right = 1, Left = -1, Still = 0
 walksp = 10;
 hsp = move * walksp;
-show_debug_message(room);
-vsp = vsp + grv//jump speed with gravity
-if(obj_timer.timesUp || instance_exists(obj_intro) || obj_scoreboard.paused){
-	key_left = false;
-	key_right = false;
-	key_jump = false;
-	key_down = false;
-	key_climb = false;
-	
-	key_grab = false;
-	move = 0;
-	walksp = 0;
-	hsp = 0;
-	vsp = 0;
-}
 
+vsp = vsp + grv//jump speed with gravity
+if(instance_exists(obj_scoreboard)){
+	if(obj_timer.timesUp || instance_exists(obj_intro) || obj_scoreboard.paused){
+		key_left = false;
+		key_right = false;
+		key_jump = false;
+		key_down = false;
+		key_climb = false;
+	
+		key_grab = false;
+		move = 0;
+		walksp = 0;
+		hsp = 0;
+		vsp = 0;
+	}
+}
 if(instance_exists(obj_nextLvlDoor)){
 	if (obj_nextLvlDoor.opening){
 		key_left = false;
@@ -124,7 +125,7 @@ if(climbing){
 			vsp = -35;
 			canDoubleJump = true;
 
-		}else if(canDoubleJump && key_jump){
+		}else if(canDoubleJump && key_jump && !climbing){
 			dj = true;
 			alarm[1] = 12;
 			vsp = -35;
@@ -227,8 +228,14 @@ mask_index = spr_ninjaStand
 }
 if(!dj){
 	if(climbing){
-		image_speed = 0.17;
+		
 		sprite_index = spr_ninjawalk;
+		if(key_climb || key_down){
+				image_speed = 0.17;
+		}else {
+			image_speed = 0;
+		}
+
 	}else if(!place_meeting(x, y + 20, obj_platform)){
 		sprite_index = spr_ninjaJump;	
 	}else if(hsp != 0 && place_meeting(x, y + 4, obj_platform) && !crouching || (move != 0 && distance_to_object(obj_box) < 4 && !crouching)){
