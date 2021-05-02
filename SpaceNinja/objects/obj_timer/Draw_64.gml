@@ -20,5 +20,5 @@ draw_text_ext_transformed(960, 45, currentTime, 30, 100, 4, 4, 0);
 
 if(timesUp){
 
-draw_text_ext_transformed(500, 400, "You ran out of time, press space to restart", 30, 200, 3, 3, 0);
+draw_text_ext_transformed(960, 400, "You ran out of time, press space to restart", 30, 200, 3, 3, 0);
 }

@@ -1,7 +1,7 @@
 if(showPushButton){
-	draw_text_ext_transformed_color(500, 150, "Hurry, First you must press the button to turn on the power", 20, 300, 3, 3, 0, c_red, c_red, c_red, c_red, 1);
+	draw_text_ext_transformed_color(960, 150, "Hurry, First you must press the button to turn on the power", 20, 300, 3, 3, 0, c_red, c_red, c_red, c_red, 1);
 }else if(showMoreEnemies){
-	draw_text_ext_transformed_color(500, 150, "You must kill all enemies in the room", 20, 300, 3, 3, 0, c_red, c_red, c_red, c_red, 1);
+	draw_text_ext_transformed_color(960, 150, "You must kill all enemies in the room", 20, 300, 3, 3, 0, c_red, c_red, c_red, c_red, 1);
 }
 if(opening){
 	if(room == 7){
