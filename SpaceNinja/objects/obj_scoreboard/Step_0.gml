@@ -32,33 +32,33 @@ if(paused && room != 6){
 	
 	
 	
-	if(i % 3 = 0){
+	
 			obj_blaster.alarm[0] ++;	
-	}
+	
 	if(instance_exists(obj_alien1)){
 		obj_alien1.image_speed = 0;
 	}
-i++
-if(i % 3 = 0 && !instance_exists(obj_intro)){
+
+if(!instance_exists(obj_intro)){
 	obj_timer.alarm[0] ++;
 }
 	if(instance_exists(obj_spike)){
 		if(obj_spike.alarm[0] > 0){
-			if(i % 3 = 0){
+		
 				obj_spike.alarm[0] ++;	
-			}
+			
 		}else if (obj_spike.alarm[1] > 0){
-			if(i % 3 = 0){
+		
 				obj_spike.alarm[1] ++;	
-			}
+			
 		}else if (obj_spike.alarm[2] > 0){
-			if(i % 3 = 0){
+			
 				obj_spike.alarm[2] ++;	
-			}
+			
 		}else if (obj_spike.alarm[3] > 0){
-			if(i % 3 = 0){
+		
 				obj_spike.alarm[3] ++;	
-			}
+			
 		}
 	}
 	if(pauseInd == 0){
@@ -100,7 +100,7 @@ if(i % 3 = 0 && !instance_exists(obj_intro)){
 		}
 	}
 }else{
-	i = 0;
+	
 	if(instance_exists(obj_floatingPlatform)){
 		obj_floatingPlatform.timeline_running = true;
 	}
