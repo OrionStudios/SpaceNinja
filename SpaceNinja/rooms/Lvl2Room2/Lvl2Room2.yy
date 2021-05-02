@@ -981,6 +981,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6368.0,"y":4544.0,"resourceVersion":"1.0","name":"inst_61968D9","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6496.0,"y":4416.0,"resourceVersion":"1.0","name":"inst_E8CB039","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6496.0,"y":4544.0,"resourceVersion":"1.0","name":"inst_3A749F21","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_alien1","path":"objects/obj_alien1/obj_alien1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6816.0,"y":4224.0,"resourceVersion":"1.0","name":"inst_36EACBD8","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[
@@ -1959,6 +1960,7 @@
     {"name":"inst_3A749F21","path":"rooms/Lvl2Room2/Lvl2Room2.yy",},
     {"name":"inst_59DE4FCC","path":"rooms/Lvl2Room2/Lvl2Room2.yy",},
     {"name":"inst_50E469F8","path":"rooms/Lvl2Room2/Lvl2Room2.yy",},
+    {"name":"inst_36EACBD8","path":"rooms/Lvl2Room2/Lvl2Room2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

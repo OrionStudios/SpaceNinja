@@ -39,7 +39,7 @@ if(paused && room != 6){
 		obj_alien1.image_speed = 0;
 	}
 i++
-if(i % 3 = 0){
+if(i % 3 = 0 && !instance_exists(obj_intro)){
 	obj_timer.alarm[0] ++;
 }
 	if(instance_exists(obj_spike)){
@@ -74,7 +74,7 @@ if(i % 3 = 0){
 				}
 			}else if(mouse_y >= camera_get_view_y(view_camera[0]) + 440 && mouse_y <= camera_get_view_y(view_camera[0]) + 510){
 				if(mouse_check_button_pressed(mb_left)){
-					paused  = false;
+					paused  = true;
 					
 					obj_timer.alarm[0] = obj_timer.startTime;
 					room_restart();

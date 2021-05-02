@@ -227,8 +227,8 @@ mask_index = spr_ninjaStand
 }
 if(!dj){
 	if(climbing){
-		image_speed = 0;
-		sprite_index = spr_ninjaStand;
+		image_speed = 0.17;
+		sprite_index = spr_ninjawalk;
 	}else if(!place_meeting(x, y + 20, obj_platform)){
 		sprite_index = spr_ninjaJump;	
 	}else if(hsp != 0 && place_meeting(x, y + 4, obj_platform) && !crouching || (move != 0 && distance_to_object(obj_box) < 4 && !crouching)){
