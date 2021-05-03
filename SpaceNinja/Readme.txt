@@ -27,7 +27,7 @@ Instructions:
 	
 	HUD:
 	Lives - Mini Agent-47 faces on the top left of the screen | How many lives are available
-	Health - Green Bar on to pleft of the screen | How many hits a player can take before losing a life
+	Health - Green Bar on top left of the screen | How many hits a player can take before losing a life
 	Energy bar - Green bars on the bottom left of the screen | The charge of Agent 47's energy gun
 	Timer - Middle top of the screen | Amount of time left to finish the level
 
