@@ -5,6 +5,6 @@ showMoreEnemies = true;
 }else{
 	if(!opening){
 		opening = true;
-		alarm[0] = 30;
+		alarm[0] = 50;
 	}
 }

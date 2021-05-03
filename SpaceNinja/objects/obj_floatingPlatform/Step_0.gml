@@ -1,3 +1,4 @@
+
 if(!obj_scoreboard.paused){
 	if(!vertical){
 	switch(state){
@@ -21,11 +22,17 @@ if(!obj_scoreboard.paused){
 					}
 
 				}else{//if nothing obstructing
-		
+					
+				if(instance_exists(obj_buttonEnding)){
+					if(obj_buttonEnding.activated){
+						hsp = 0	
+					}
+				}
 				x += hsp;//if not near anything move normally
 			
 				}
 	}else{
+	
 		switch(state){
 		case "move_up": 
 			vsp = -moveSpeed;
@@ -46,7 +53,11 @@ if(!instance_exists(obj_alienBoss)){
 					}
 
 				}else{//if nothing obstructing
-		
+				if(instance_exists(obj_buttonEnding)){
+					if(obj_buttonEnding.activated){
+						 vsp = 0	
+					}
+				}
 				y += vsp;//if not near anything move normally
 			
 				}

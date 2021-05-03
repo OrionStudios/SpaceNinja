@@ -34,6 +34,11 @@ if(!obj_scoreboard.paused){
 			}
 				
 		}else{
+		if(instance_exists(obj_buttonEnding)){
+			if(obj_buttonEnding.activated){
+			 hsp = 0	
+			}
+		}
 			x += hsp;//if not near anything move normally
 		}
 	}else{//if not agroed on ninja
@@ -49,7 +54,11 @@ if(!obj_scoreboard.paused){
 				}
 
 			}else{//if nothing obstructing
-		
+			if(instance_exists(obj_buttonEnding)){
+				if(obj_buttonEnding.activated){
+				 hsp = 0	
+				}
+			}
 			x += hsp;//if not near anything move normally
 				if(collision_line(x,y, x + agroRange * sign(hsp), y, obj_ninja, false, true)){//if ninja in line of sight
 					agro = true;

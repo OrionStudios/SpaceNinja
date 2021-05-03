@@ -11,6 +11,21 @@ walksp = 10;
 hsp = move * walksp;
 
 vsp = vsp + grv//jump speed with gravity
+if(instance_exists(obj_buttonEnding)){
+	if (obj_buttonEnding.activated){
+			key_left = false;
+		key_right = false;
+		key_jump = false;
+		key_down = false;
+		key_climb = false;
+	
+		key_grab = false;
+		move = 0;
+		walksp = 0;
+		hsp = 0;
+		vsp = 0;
+	}
+}
 if(instance_exists(obj_scoreboard)){
 	if(obj_timer.timesUp || instance_exists(obj_intro) || obj_scoreboard.paused || obj_scoreboard.gameOver){
 		key_left = false;

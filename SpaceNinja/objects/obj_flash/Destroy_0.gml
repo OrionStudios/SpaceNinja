@@ -3,6 +3,5 @@
 var lay_id = layer_get_id("Background");
 var back_id = layer_background_get_id(lay_id);
 layer_background_sprite(back_id, spr_background);
-if(room == 7){
+
 layer_background_alpha(back_id, 1);
-}
