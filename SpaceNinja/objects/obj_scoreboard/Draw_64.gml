@@ -18,6 +18,7 @@ draw_healthbar(50, 50, 300, 100, global.hp, c_black, c_green, c_green, 0, true, 
 
 	}
 		if(gameOver){
+			draw_text_ext_transformed(960, 300, "Game Over", 30, 200, 3, 3, 0);
 			draw_text_ext_transformed(960, 400, "You ran out of lives, press space to return to menu", 30, 200, 3, 3, 0);
 		}
 
