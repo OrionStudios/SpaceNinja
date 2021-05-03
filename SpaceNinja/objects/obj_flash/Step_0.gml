@@ -8,6 +8,6 @@ layer_background_alpha(back_id, 0);
 if(instance_exists(obj_button)){
 	var button = instance_nearest(x, y, obj_button);
 	if(button.activated){
-	instance_destroy();
+		instance_destroy();
 	}
 }

@@ -1,4 +1,8 @@
 if (instance_exists(obj_alienBoss)){
+	if( !shooting){
+		shooting = true;
+		alarm[0] = 50;	
+	}
 
 		x = obj_alienBoss.x + 55 * obj_alienBoss.image_xscale;
 		y = obj_alienBoss.y + 150;

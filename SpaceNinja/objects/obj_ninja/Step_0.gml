@@ -12,7 +12,7 @@ hsp = move * walksp;
 
 vsp = vsp + grv//jump speed with gravity
 if(instance_exists(obj_scoreboard)){
-	if(obj_timer.timesUp || instance_exists(obj_intro) || obj_scoreboard.paused){
+	if(obj_timer.timesUp || instance_exists(obj_intro) || obj_scoreboard.paused || obj_scoreboard.gameOver){
 		key_left = false;
 		key_right = false;
 		key_jump = false;
@@ -76,8 +76,8 @@ if(climbing){
 		y += climb_speed;//go down
 	}
 	
-	if(place_meeting(x + hsp, y, obj_platform) || place_meeting(x + hsp, y, obj_box)){//if platform or box is within move distance
-		while(!place_meeting(x + sign(hsp), y, obj_platform) && !place_meeting(x + sign(hsp), y, obj_box)){//while platform and box arent 1 pixel away
+	if(place_meeting(x + hsp, y, obj_platform) || place_meeting(x + hsp, y, obj_box) || place_meeting(x + hsp, y, obj_moreEnemies)){//if platform or box is within move distance
+		while(!place_meeting(x + sign(hsp), y, obj_platform) && !place_meeting(x + sign(hsp), y, obj_box) && !place_meeting(x + sign(hsp), y, obj_moreEnemies)){//while platform and box arent 1 pixel away
 			x += sign(hsp);//move forward 1 pixel
 		}
 		hsp = 0;//ninja within 1 pixel of platform or box so stop moving

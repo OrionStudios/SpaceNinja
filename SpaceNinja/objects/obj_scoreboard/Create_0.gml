@@ -6,3 +6,4 @@ lives = 3;
 i = 0;
 j = 0;
 pauseInd = 0;
+gameOver = false;

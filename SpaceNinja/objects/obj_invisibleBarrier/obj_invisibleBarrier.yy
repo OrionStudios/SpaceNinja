@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_alien2",
-    "path": "sprites/spr_alien2/spr_alien2.yy",
+    "name": "spr_wallSmall",
+    "path": "sprites/spr_wallSmall/spr_wallSmall.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_alien1",
-    "path": "objects/obj_alien1/obj_alien1.yy",
+    "name": "obj_platform",
+    "path": "objects/obj_platform/obj_platform.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,7 +23,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_invisibleBarrier","path":"objects/obj_invisibleBarrier/obj_invisibleBarrier.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +33,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_alien2",
+  "name": "obj_invisibleBarrier",
   "tags": [],
   "resourceType": "GMObject",
 }
