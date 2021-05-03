@@ -19,8 +19,9 @@ switch(state){
 		hsp = -moveSpeed;
 		break;
 }
-
-image_xscale = sign(hsp);
+if(!obj_scoreboard.paused){
+	image_xscale = sign(hsp);
+}
 if(!obj_scoreboard.paused){
 	if(agro){//if agroed onto ninja
 		timeline_running = false;//stop timeline

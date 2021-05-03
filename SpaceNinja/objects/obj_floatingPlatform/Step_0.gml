@@ -43,7 +43,7 @@ if(!obj_scoreboard.paused){
 			break;
 	}
 
-if(!instance_exists(obj_alienBoss)){
+if(!instance_exists(obj_alienBoss) || !boss){
 		if(place_meeting(x, y + vsp * 15, obj_platform) && !place_meeting(x, y + vsp * 15, obj_box) ){//if platform or box or no ground is within move distance
 			
 					if(vsp > 0){//if moving to the right
