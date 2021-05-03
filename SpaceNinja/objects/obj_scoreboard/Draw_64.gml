@@ -11,7 +11,7 @@ draw_healthbar(50, 50, 300, 100, global.hp, c_black, c_green, c_green, 0, true, 
 		}
 		for (var i = 0; i < lives; i++){
 			//draws number of lives player has
-			draw_text(55+75, 200, string(lives));
+			
 			draw_sprite(spr_ninjaLife, 0, (55 + 75 * i), 125);//draws number of lives ninja has	
 		}
 

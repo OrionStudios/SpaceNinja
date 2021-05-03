@@ -10,7 +10,7 @@ if (instance_exists(obj_ninja)){
 	image_xscale = obj_ninja.image_xscale;
 	
 }
-if(keyboard_check_pressed(vk_space) && canShoot && !obj_scoreboard.paused){
+if(keyboard_check_pressed(vk_space) && canShoot && !obj_scoreboard.paused && !instance_exists(obj_intro) && !obj_timer.timesUp){
 	canShoot = false;
 	alarm[0] = 20;
 	if(global.energy > 0){

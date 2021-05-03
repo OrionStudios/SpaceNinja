@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_smallPlatform",
+    "path": "objects/obj_smallPlatform/obj_smallPlatform.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
