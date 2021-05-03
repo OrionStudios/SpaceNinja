@@ -1,3 +1,8 @@
+if (collision_circle(x, y, 300, obj_explosion, false, true)){
+	takingDamage = true;
+    hp -= 20;
+}
+
 if (hp <= 0){
 	instance_destroy();	
 }
