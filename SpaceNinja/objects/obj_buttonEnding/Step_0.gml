@@ -20,7 +20,7 @@ obj_timer.alarm[0] ++;
 			obj_floatingPlatform.vsp = 0
 		}
 	
-	obj_ninja.canShoot = false;
+	obj_blaster.canShoot = false;
 	
 	
 				obj_blaster.alarm[0] ++;	
