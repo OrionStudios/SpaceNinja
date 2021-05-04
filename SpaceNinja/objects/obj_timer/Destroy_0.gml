@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(timesUp){
+	lives--;
 	if (room == 7 || room == 5 || room == 3){
 			room_restart();
 		}else if(room == 1){

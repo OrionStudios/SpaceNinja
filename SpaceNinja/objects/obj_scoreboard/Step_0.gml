@@ -25,6 +25,11 @@ if (global.hp <= 0){
 	}
 
 
+}else if(lives == 0){
+		
+		audio_play_sound(snd_gameReset, 4, false);
+		//instance_destroy();
+		gameOver = true;
 }
 
 
