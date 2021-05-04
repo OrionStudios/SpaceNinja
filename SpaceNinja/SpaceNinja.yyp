@@ -5,6 +5,7 @@
     {"id":{"name":"obj_alien1","path":"objects/obj_alien1/obj_alien1.yy",},"order":28,},
     {"id":{"name":"spr_alien2","path":"sprites/spr_alien2/spr_alien2.yy",},"order":33,},
     {"id":{"name":"Timeline2","path":"timelines/Timeline2/Timeline2.yy",},"order":1,},
+    {"id":{"name":"obj_shield","path":"objects/obj_shield/obj_shield.yy",},"order":32,},
     {"id":{"name":"obj_floatingPlatform","path":"objects/obj_floatingPlatform/obj_floatingPlatform.yy",},"order":3,},
     {"id":{"name":"Lvl3Room3","path":"rooms/Lvl3Room3/Lvl3Room3.yy",},"order":6,},
     {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},"order":6,},
