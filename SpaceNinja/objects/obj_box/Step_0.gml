@@ -19,14 +19,14 @@ if(onPlatform){
 	
 	y += grv;//move down regular if not touching platform
 	
-
+if(!place_meeting(x, y, obj_ninja)){
 if(!beingGrabbed){//if not being grabbed
-			if (place_meeting(x + 1, y, obj_ninja)){//if ninja is 1 pixel to the right
+	if (place_meeting(x + 1, y, obj_ninja) && obj_ninja.vsp == 0){//if ninja is 1 pixel to the right
 		
 		if(!place_meeting(x - 4, y, obj_platform) && !place_meeting(x - 4, y, obj_alien1)){//if platfrom isnt on left
 			x -= 4;//move 4 pixels to the left
 		}
-	}else if (place_meeting(x - 1, y, obj_ninja)){//if ninja is 1 pixel to the left
+	}else if (place_meeting(x - 1, y, obj_ninja) && obj_ninja.vsp == 0){//if ninja is 1 pixel to the left
 	
 		if(!place_meeting(x + 4, y, obj_platform) && !place_meeting(x - 4, y, obj_alien1)){//if platfrom isnt on right
 			x += 4;//move 4 pixels to the right
@@ -74,5 +74,6 @@ if(!beingGrabbed){//if not being grabbed
 			}
 		}
 	}
+}
 }
 beingGrabbed = false;

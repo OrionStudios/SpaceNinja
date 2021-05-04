@@ -6,7 +6,7 @@ key_climb = keyboard_check(vk_up) || keyboard_check(ord("W"));
 key_grab = keyboard_check(ord("G"));
 
 
-var move = key_right - key_left;//Right = 1, Left = -1, Still = 0
+ move = key_right - key_left;//Right = 1, Left = -1, Still = 0
 walksp = 10;
 hsp = move * walksp;
 

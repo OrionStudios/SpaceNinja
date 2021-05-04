@@ -1,6 +1,6 @@
 hsp = 0;
 vsp = 0;
-
+move = 0;
 crouching = false;
 dj = false;
 grv = 2.5;
