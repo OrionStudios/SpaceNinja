@@ -3,6 +3,7 @@
 global.hp = 100;
 paused = false;
 lives = 3;
+global.energy = 25;
 i = 0;
 j = 0;
 pauseInd = 0;

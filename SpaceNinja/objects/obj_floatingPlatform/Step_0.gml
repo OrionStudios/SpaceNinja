@@ -13,7 +13,7 @@ if(!obj_scoreboard.paused){
 
 
 
-		if(place_meeting(x + hsp * 15, y, obj_platform) || place_meeting(x + hsp * 15, y, obj_box) ){//if platform or box or no ground is within move distance
+		if(place_meeting(x + hsp * 30, y, obj_platform) || place_meeting(x + hsp * 30, y, obj_box) ){//if platform or box or no ground is within move distance
 			
 					if(hsp > 0){//if moving to the right
 						timeline_position = 400;//set timeline to move to left	

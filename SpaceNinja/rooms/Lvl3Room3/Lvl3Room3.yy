@@ -1093,6 +1093,9 @@
         {"properties":[
             {"propertyId":{"name":"moving","path":"objects/obj_spike/obj_spike.yy",},"objectId":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":7360.0,"y":5696.0,"resourceVersion":"1.0","name":"inst_752A7F10","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"moving","path":"objects/obj_spike/obj_spike.yy",},"objectId":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1856.0,"y":6720.0,"resourceVersion":"1.0","name":"inst_26E52FCB","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"SpikeLayer","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":{"name":"spr_walLarge","path":"sprites/spr_walLarge/spr_walLarge.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
@@ -2158,6 +2161,7 @@
     {"name":"inst_2CF7661B","path":"rooms/Lvl3Room3/Lvl3Room3.yy",},
     {"name":"inst_3837DEF0","path":"rooms/Lvl3Room3/Lvl3Room3.yy",},
     {"name":"inst_65EB590F","path":"rooms/Lvl3Room3/Lvl3Room3.yy",},
+    {"name":"inst_26E52FCB","path":"rooms/Lvl3Room3/Lvl3Room3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

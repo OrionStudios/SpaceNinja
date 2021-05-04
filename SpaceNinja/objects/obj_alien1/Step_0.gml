@@ -29,10 +29,10 @@ if(!obj_scoreboard.paused){
 					agro = false;//no longer agro
 		}
 		
-		if(place_meeting(x + hsp, y, obj_platform) || place_meeting(x + hsp, y, obj_box) || !place_meeting(x + (sprite_width)  + hsp, y + sprite_height , obj_platform)){//if platform or box or no ground is within move distance
-			while(!place_meeting(x + sign(hsp), y, obj_platform) && !place_meeting(x + sign(hsp), y, obj_box) && place_meeting(x + (sprite_width)  + sign(hsp) , y + (sprite_height / 2) + 8, obj_platform)){//while platform and box arent 1 pixel away and ground is
-				x += sign(hsp);//move forward 1 pixel
-			}
+			if(place_meeting(x + hsp, y, obj_platform) || place_meeting(x + hsp, y, obj_box) || !place_meeting(x + (sprite_width)  + hsp, y + 10 , obj_platform)){//if platform or box or no ground is within move distance
+				while(!place_meeting(x + sign(hsp), y, obj_platform) && !place_meeting(x + sign(hsp), y, obj_box) && place_meeting(x + (sprite_width)  + sign(hsp) , y + 10, obj_platform)){//while platform and box arent 1 pixel away and ground is
+					x += sign(hsp);//move forward 1 pixel
+				}
 				
 		}else{
 		if(instance_exists(obj_buttonEnding)){
