@@ -2,12 +2,12 @@
 // You can write your code in this editor
 if (global.hp <= 0){
 	
-	if(lives == 0){
+	if(lives == 0 && !gameOver){
 		
 		audio_play_sound(snd_gameReset, 4, false);
 		//instance_destroy();
 		gameOver = true;
-	}else{
+	}else if (lives > 0){
 		global.hp = 100;
 		global.energy = 25;
 		obj_timer.alarm[0] = obj_timer.startTime;
@@ -26,13 +26,7 @@ if (global.hp <= 0){
 	}
 
 
-}else if(lives == 0){
-		
-		audio_play_sound(snd_gameReset, 4, false);
-		//instance_destroy();
-		gameOver = true;
 }
-
 
 if(!gameOver){
 	if(paused && room != 6){
@@ -121,6 +115,43 @@ if(!gameOver){
 		}
 	}
 }else{
+	if(instance_exists(obj_floatingPlatform)){
+			obj_floatingPlatform.timeline_running = false;
+			obj_floatingPlatform.hsp = 0
+			obj_floatingPlatform.vsp = 0
+		}
+	
+	
+	
+	
+				obj_blaster.alarm[0] ++;	
+	
+		if(instance_exists(obj_alien1)){
+			obj_alien1.image_speed = 0;
+		}
+
+	if(!instance_exists(obj_intro)){
+		obj_timer.alarm[0] ++;
+	}
+		if(instance_exists(obj_spike)){
+			if(obj_spike.alarm[0] > 0){
+		
+					obj_spike.alarm[0] ++;	
+			
+			}else if (obj_spike.alarm[1] > 0){
+		
+					obj_spike.alarm[1] ++;	
+			
+			}else if (obj_spike.alarm[2] > 0){
+			
+					obj_spike.alarm[2] ++;	
+			
+			}else if (obj_spike.alarm[3] > 0){
+		
+					obj_spike.alarm[3] ++;	
+			
+			}
+		}
 	if(keyboard_check_pressed(vk_space)){
 		game_restart();
 	}

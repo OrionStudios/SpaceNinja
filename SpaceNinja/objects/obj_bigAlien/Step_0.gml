@@ -2,7 +2,7 @@ if(hp <= 0){
 	instance_destroy();	
 }
 show_debug_message("POS" + string(path_position));
-if(!obj_scoreboard.paused){
+if(!obj_scoreboard.paused && !obj_scoreboard.gameOver){
 	image_speed = 0.25;
 	if(movingLeft && path_position == 0){
 		movingRight = true;

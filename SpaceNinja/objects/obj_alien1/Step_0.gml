@@ -22,7 +22,7 @@ switch(state){
 if(!obj_scoreboard.paused){
 	image_xscale = sign(hsp);
 }
-if(!obj_scoreboard.paused){
+if(!obj_scoreboard.paused && !obj_scoreboard.gameOver){
 	if(agro){//if agroed onto ninja
 		timeline_running = false;//stop timeline
 		if(!collision_line(x,y, x + agroRange * sign(hsp), y, obj_ninja, false, true)){//if ninja isnt in line of sight
