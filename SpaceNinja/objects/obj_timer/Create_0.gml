@@ -21,7 +21,7 @@ switch(room){
 	case 1://Lvl2Room2
 	case 3://Lvl3Room1
 	
-	startTime = 3600 * 3;
+	startTime = 3600 * 3.5;
 	break;
 	case 2://Lvl3Room2
 	case 0://Lvl3Room3

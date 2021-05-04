@@ -6,6 +6,7 @@ show_debug_message(string(room) + "ROOM")
 }else if(keyboard_check_pressed(ord("N")) && room == 4){
 room_goto(6)
 }else if (keyboard_check_pressed(ord("R"))){
+	audio_stop_sound(snd_winGame);
 	obj_timer.alarm[0] = obj_timer.startTime;
 room_restart();
 }else if (keyboard_check_pressed(ord("M"))){
