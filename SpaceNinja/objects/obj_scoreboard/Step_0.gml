@@ -9,6 +9,7 @@ if (global.hp <= 0){
 		gameOver = true;
 	}else{
 		global.hp = 100;
+		global.energy = 25;
 		obj_timer.alarm[0] = obj_timer.startTime;
 		
 		if (room == 7 || room == 5 || room == 3){
