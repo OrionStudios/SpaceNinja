@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if(place_meeting(x,y-5, obj_ninja) && !activated){
 	audio_pause_sound(snd_lvl2);
+	audio_stop_sound(snd_clockTick);
     audio_play_sound(snd_lastButtonPush, 4, false);
 	audio_play_sound(snd_winGame, 2, false);
 	audio_stop_sound(snd_lvl3);
