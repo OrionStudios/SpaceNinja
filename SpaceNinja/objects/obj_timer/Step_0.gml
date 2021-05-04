@@ -9,9 +9,12 @@ if(timesUp){
 }
 if(instance_exists(obj_intro)){
 	alarm[0] ++;
+	counting = false;
 }else if(!counting){
 	if(room == 5){
-		instance_create_layer(x, y, "FlashLayer", obj_flash)
+		if(!instance_exists(obj_flash)){
+			instance_create_layer(x, y, "FlashLayer", obj_flash)
+		}
 	}
 		counting = true;
 		alarm[1] = 20;
