@@ -19,6 +19,12 @@ draw_text_ext_transformed(960, 45, currentTime, 30, 100, 4, 4, 0);
 
 
 if(timesUp){
-
+if(lives > 0){
 draw_text_ext_transformed(960, 400, "You ran out of time, press space to restart the phase", 30, 200, 3, 3, 0);
+}else{
+	draw_text_ext_transformed(960, 300, "Game Over", 30, 200, 3, 3, 0);
+
+	draw_text_ext_transformed(960, 400, "You ran out of time and have no more lives, press space to restart the game", 30, 200, 3, 3, 0);
+
+}
 }
