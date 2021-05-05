@@ -33,7 +33,7 @@ if(instance_exists(obj_scoreboard)){
 		key_jump = false;
 		key_down = false;
 		key_climb = false;
-	
+
 		key_grab = false;
 		move = 0;
 		walksp = 0;
@@ -70,6 +70,7 @@ if (instance_place(x, y, obj_ladder)){//if touching ladder
 	if(climbing){//if still in climbing state but not touching ladder
 		vsp = 0;//reset vsp
 	}
+	
 	climbing = false;
 	//sprite_index = spr_player;
 }

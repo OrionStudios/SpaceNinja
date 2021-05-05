@@ -15,12 +15,28 @@
 	//				y+= platform.vsp;
 	//			}
 	//}
-			
-			if(hp < 60 && hp > 30 && speedUp == 0){
-				path_speed = 15;
-				speedUp = 1;
-			}else if(hp < 30 && speedUp == 1){
-			path_speed = 20;
-				speedUp = 2;
+			if(!obj_scoreboard.gameOver && !obj_scoreboard.paused){
+				image_speed = 0.1;
+				if(hp >= 60 && bossPaused){
+					bossPaused = false;
+				path_speed = 8;	
+				}else if(hp < 60 && hp > 30 && bossPaused){
+					bossPaused = false;
+					path_speed = 15;
+				}else if(hp <= 30 && bossPaused){
+					bossPaused = false;
+					path_speed = 20;
+				}
+				
+				if(hp < 60 && hp > 30 && speedUp == 0){
+					path_speed = 15;
+					speedUp = 1;
+				}else if(hp < 30 && speedUp == 1){
+				path_speed = 20;
+					speedUp = 2;
+				}
+			}else{
+				bossPaused = true;
+			path_speed = 0;
+			image_speed = 0;
 			}
-		

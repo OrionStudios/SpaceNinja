@@ -1,7 +1,7 @@
 if(instance_exists(obj_invisibleBarrier)){
 	
 }else{
-	if (instance_exists(obj_alienBoss)){
+	if (instance_exists(obj_alienBoss) && !obj_scoreboard.gameOver && !obj_scoreboard.paused){
 		if( !shooting){
 			shooting = true;
 			alarm[0] = 50;	
@@ -25,5 +25,13 @@ if(instance_exists(obj_invisibleBarrier)){
 		}
 
 	
+	}else{
+		if(obj_alienBoss.hp > 60){
+		alarm[0]++;
+		}else if(obj_alienBoss.hp > 30 ){
+			alarm[1] ++;
+		}else{
+			alarm[2] ++;
+		}
 	}
 }

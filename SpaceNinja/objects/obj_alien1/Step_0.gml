@@ -19,7 +19,7 @@ switch(state){
 		hsp = -moveSpeed;
 		break;
 }
-if(!obj_scoreboard.paused){
+if(!obj_scoreboard.paused && !obj_scoreboard.gameOver){
 	image_xscale = sign(hsp);
 }
 if(!obj_scoreboard.paused && !obj_scoreboard.gameOver){

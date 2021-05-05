@@ -4,7 +4,7 @@ if(other.y > y - 3 && vsp > 0 ){
 	other.hp -= 25;
 	vsp = -35;
 	
-}else if(canTakeDamage){
+}else if(canTakeDamage && !obj_scoreboard.gameOver && !obj_scoreboard.paused){
 	audio_play_sound(snd_playerDamage, 3, false);
 	canTakeDamage = false;
 	global.hp -= 25;
