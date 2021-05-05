@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(timesUp){
+	
+	if(lives <= 0){
+		game_restart();	
+	}else{
 	lives--;
 	if (room == 7 || room == 5 || room == 3){
 			room_restart();
@@ -9,4 +13,5 @@ if(timesUp){
 		}else if(room == 2 || room == 0){
 			room_goto(3);	
 		}
+	}
 }
