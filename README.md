@@ -1,4 +1,4 @@
-# SpaceNinja
+# Space Ninja
 
 ### Welcome to our repo for the game Space Ninja!
 This game was made with Game Maker Studio 2, and you can find all the files on here. 
