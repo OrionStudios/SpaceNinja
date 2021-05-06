@@ -1,2 +1,0 @@
-draw_rectangle_color(8, 64, 256, 88, c_black, c_black, c_black, c_black, false);//draw xp background
-draw_rectangle_color(8, 64, 8 + (xp /maxXP * 300), 88, c_aqua, c_aqua, c_aqua, c_aqua, false);//draw xp bar
