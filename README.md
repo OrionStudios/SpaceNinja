@@ -1,10 +1,10 @@
 # SpaceNinja
 
-#### Welcome to our repo for the game Space Ninja!
+### Welcome to our repo for the game Space Ninja!
 This game was made with Game Maker Studio 2, and you can find all the files on here. 
 
 #### IMPORTANT: 
-### Note that in our game, we used free or licensed assets, and those cannot be reused directly from our files.** 
+#### Note that in our game, we used free or licensed assets, and those cannot be reused directly from our files.** 
 If you want to use the assets, you must purchase or get a free license directly from each of those people or companies. 
 Their information can be found in the license.txt file in our game's repo.
 
