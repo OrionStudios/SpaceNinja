@@ -1,5 +1,5 @@
 # Space Ninja
-![SNtitle](https://user-images.githubusercontent.com/25125692/124681964-b69b6f80-de97-11eb-9bb7-16cd2dd7027b.png)
+![SNtitle](https://user-images.githubusercontent.com/25125692/124682063-e77ba480-de97-11eb-9ee1-d1e2f7fc504f.png)
 
 ### Welcome to our repo for the game Space Ninja!
 This game was made with Game Maker Studio 2, and you can find all the files on here. 
