@@ -1,4 +1,3 @@
-# Space Ninja
 ![SNtitle](https://user-images.githubusercontent.com/25125692/124682063-e77ba480-de97-11eb-9ee1-d1e2f7fc504f.png)
 
 ### Welcome to our repo for the game Space Ninja!
